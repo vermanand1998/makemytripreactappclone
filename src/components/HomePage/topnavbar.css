@@ -1,0 +1,215 @@
+.topnavbarmaindiv {
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  color: white;
+  width: 100%;
+}
+.whitelogoimage {
+  height: 36px;
+  width: 104px;
+}
+.middlenavdiv {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  /* border: 2px solid yellow; */
+}
+.superoffers {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  /* border: 2px solid green; */
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.superofferlogo {
+  background-image: url("../../../public/assets/Images/headerimages.png");
+  width: 25px;
+  height: 25px;
+  background-position: -225px -326px;
+  background-size: 260px 400px;
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: 900;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.superofferdescription {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.superoffers h3 {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 900;
+}
+.superoffers p {
+  margin: 0;
+  font-size: 10px;
+}
+.mybiz {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  /* border: 2px solid green; */
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.mybizlogo {
+  background-image: url("../../../public/assets/Images/alllogo.png");
+  width: 44px;
+  height: 22px;
+  background-position: -98px -491px;
+  background-size: 200px 700px;
+  margin-right: 10px;
+}
+.mybizdescription {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.mybiz h3 {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 900;
+}
+.mybiz p {
+  margin: 0;
+  font-size: 10px;
+}
+.mytrips {
+  display: flex;
+  flex-direction: row;
+  /* border: 2px solid green; */
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.mytripslogo {
+  background-image: url("../../../public/assets/Images/alllogo.png");
+  width: 16px;
+  height: 25px;
+  background-position: -122px -30px;
+  background-size: 200px 700px;
+  margin-right: 10px;
+}
+.mytripsdescription {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.mytrips h3 {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 900;
+}
+.mytrips p {
+  margin: 0;
+  font-size: 10px;
+}
+.rightnavdiv {
+  display: flex;
+  flex-direction: row;
+  /* border: 2px solid yellow; */
+}
+.loginorcreateaccnt {
+  background-image: var(
+    --color-btn-primary-bg,
+    linear-gradient(93deg, #53b2fe, #065af3)
+  );
+  border: 0;
+  border-radius: 4px;
+  margin-right: 0;
+  width: 213px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 11px;
+  font-weight: 900;
+}
+.afterloginorcreateaccnt {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 34px;
+  font-size: 12px;
+  font-weight: 900;
+  margin-right: 10px;
+  box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.4);
+}
+.userDropdown {
+  width: 150px;
+  height: 8rem;
+  background: #fff;
+  border-radius: 4px;
+  position: absolute;
+  top: 6.5vh;
+  right: 20rem;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.2);
+  z-index: 50;
+  max-height: 200px;
+}
+.fadeIndown,
+.logoutbtn {
+  font-size: large;
+  margin-top: 6px;
+  padding: 15px;
+  gap: 8px;
+  color: black;
+  display: flex;
+  font-weight: 600;
+}
+:hover.fadeIndown:hover,
+.logoutbtn:hover {
+  background-color: azure;
+}
+
+.loginorcreateaccnt .loginlogo {
+  background-image: url("../../../public/assets/Images/alllogo.png");
+  background-position: -67px -489px;
+  height: 22px;
+  width: 23px;
+  background-size: 200px 700px;
+}
+.loginicon {
+  cursor: pointer;
+}
+.languageselector {
+  cursor: default;
+  border-radius: 4px;
+  height: 35px;
+  margin-right: 0;
+  width: 126px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 11px;
+  font-weight: 900;
+  background-color: hsla(0, 0%, 100%, 0.15);
+  border: 0;
+  padding: 0;
+}
+.flaglogo {
+  background-image: url("../../../public/assets/Images/flag.png");
+  background-position: 0 0;
+  height: 12px;
+  width: 15px;
+  background-size: 16px 74px;
+}
+.rightnavdiv {
+  cursor: pointer;
+}
+.home-list {
+  box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.4);
+}

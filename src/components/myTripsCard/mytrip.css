@@ -1,0 +1,130 @@
+.Trip-container {
+  /* border: 1px solid red; */
+  /* height: 50px; */
+  width: 90%;
+  border: none;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 15px;
+  /* background-color: #edcece; */
+  background-image: linear-gradient(261deg, #d39696, #edcece);
+  padding: 10px 30px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  /* gap: 70px; */
+  margin-bottom: 20px;
+  text-align: left;
+  cursor: default;
+}
+.T-A-D-text {
+  flex: 3;
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* border: 1px solid red; */
+  width: 240px;
+}
+.T-A-D-text p:first-child {
+  /* border: 1px solid red; */
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  color: #008cff;
+}
+.T-A-D-text p:nth-child(2) {
+  /* border: 1px solid green; */
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
+.dates-1 {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 0.3rem;
+  /* width: 200px; */
+}
+.dates-2 {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 0.3rem;
+  /* width: 200px; */
+  margin-left: 200px;
+}
+.dates-2-checkout {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 0.3rem;
+  /* width: 200px; */
+  margin-left: 216px;
+}
+
+.Start-date {
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  /* border: 1px solid red; */
+  /* width: 150px; */
+}
+.Start-date span:nth-child(2) {
+  color: rgb(61, 61, 61);
+  padding-left: 5px;
+}
+.end-date {
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  /* border: 1px solid red; */
+  /* width: 150px; */
+}
+.end-date span:nth-child(2) {
+  color: rgb(61, 61, 61);
+  padding-left: 5px;
+}
+.myTrip-dates {
+  font-size: 16px;
+  /* font-weight: 700; */
+  /* color: #585757; */
+  text-align: left;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.myTrip-dates p:first-child {
+  margin: 0;
+  padding: 0;
+}
+
+.myTrip-dates p:nth-child(2) {
+  /* font-size: 12px; */
+  margin: 0;
+  padding: 0;
+  color: #141823;
+  margin-left: 5px;
+}
+.mt-train-icon,
+.mt-hotel-icon,
+.mt-flight-icon,
+.mt-flight-icon {
+  margin-right: 20px;
+  /* color: red; */
+}

@@ -1,0 +1,119 @@
+.cardwidget-container {
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.cardwidget-container label {
+  font-size: 14px;
+  color: #000;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.cardwidget-container input {
+  font-size: 14px;
+  outline: none;
+  border: solid 1px #9b9b9b;
+  border-radius: 4px;
+  transition: 0.1s ease-out;
+  padding: 12px 15px;
+  color: #000;
+  background: transparent;
+  font-weight: 700;
+  margin-bottom: 5px;
+  width: 100%;
+}
+.expirydate-div {
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  align-items: flex-start;
+}
+.expiry-cvv-div {
+  /* border: 1px solid blueviolet ; */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: auto;
+}
+.expirydate-div .month-year-dropdown {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: row;
+}
+.expirydate-div div .month-dropdown {
+  /* width: 125px; */
+  /* width: 700%; */
+  width: 150px;
+  font-size: 14px;
+  outline: none;
+  border: solid 1px #9b9b9b;
+  border-radius: 4px 0 0 4px;
+  transition: 0.1s ease-out;
+  /* padding: 12px 15px; */
+  color: #000;
+  background: transparent;
+  font-weight: 700;
+  margin-bottom: 20px;
+  /* height: 16px; */
+}
+.expirydate-div div .year-dropdown {
+  /* width: 56px; */
+  width: 100px;
+  font-size: 14px;
+  outline: none;
+  border: solid 1px #9b9b9b;
+  border-radius: 0 4px 4px 0;
+  transition: 0.1s ease-out;
+  /* padding: 12px 15px; */
+  color: #000;
+  background: transparent;
+  font-weight: 700;
+  margin-bottom: 20px;
+  /* height: 16px; */
+}
+.cvv-div {
+  /* border: 1px solid green; */
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 26px;
+}
+.cvv-div input {
+  border: solid 1px #9b9b9b;
+  border-radius: 4px;
+  transition: 0.1s ease-out;
+  height: 40px;
+  width: 100%;
+}
+.card-paynow-btn {
+  background-image: linear-gradient(96deg, #53b2fe, #065af3);
+  box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.2);
+  color: #fff;
+  cursor: pointer;
+  height: 40px;
+  padding: 0 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 36px;
+  width: 150px;
+  margin-left: 350px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.card-termsandconditions {
+  text-align: left;
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+  font-weight: 900;
+}
+.card-termsandconditions span {
+  color: #008cff;
+}

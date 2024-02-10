@@ -1,0 +1,69 @@
+.hs-hotel-citydrpdwn-main-div {
+  /* border: 1px solid red; */
+  height: 400px;
+  width: 350px;
+  position: absolute;
+  top: 20vh;
+  left: 9vw;
+  background-color: white;
+  overflow: hidden;
+  z-index: 999999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 4px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+.search-city-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+.city-search-icon {
+  /* border: 1px solid red; */
+  height: 13px;
+  width: 13px;
+  margin-right: 5px;
+  margin-left: 5px;
+  position: absolute;
+}
+.hd-search-input {
+  /* border: 1px solid red; */
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+  padding: 11px 10px 11px 30px;
+  outline: 0;
+  border: 0;
+  font-size: 16px;
+  color: #000000;
+  font-weight: 700;
+}
+.city-list-search-div {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+.city-search-list {
+  list-style: none;
+  height: auto;
+  padding: 0;
+}
+.city-search-list li {
+  /* border: 1px solid green; */
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  height: 34px;
+  display: flex;
+  float: row;
+  align-items: center;
+  font-size: 16px;
+  gap: 20px;
+}
+.city-search-list li:hover {
+  background: #f2f2f2;
+}

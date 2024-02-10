@@ -1,0 +1,64 @@
+.forexwidgetmaincontainer {
+  border: 2px solid rgb(255, 203, 202);
+  border-left: 40px solid rgb(255, 203, 202);
+  padding: 0px 15px 0px 50px;
+  background: #ffffff;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  margin-top: 30px;
+  min-height: 80px;
+}
+.forexwidgetmaincontainer img {
+  width: 61px;
+  height: 61px;
+  position: absolute;
+  left: -22px;
+  top: 0px;
+  bottom: 0px;
+  margin: auto;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.tripmoneyleftdiv {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid red; */
+  align-items: flex-start;
+  justify-content: center;
+}
+.tripmoneylogo {
+  background-image: url("../../../public/assets/Images/alllogo.png");
+  width: 91px;
+  height: 22px;
+  background-position: -106px -559px;
+  background-size: 200px 700px;
+  margin: 0;
+}
+.tripmoneyleftdiv p {
+  /* border: 1px solid red; */
+  width: 450px;
+  margin: 0;
+  font-size: 18px;
+  text-align: left;
+}
+.tripmoneyleftdiv p span {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 900;
+}
+.ordernowdiv {
+  /* border: 1px solid red; */
+  font-size: 14px;
+  width: 130px;
+  margin-left: 450px;
+  display: flex;
+  align-items: center;
+}
+.ordernowdiv p {
+  color: #53b2fe;
+  font-weight: 900;
+  margin-right: 10px;
+}

@@ -1,0 +1,235 @@
+.stickyheaderpage {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: #fff;
+  box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.4);
+}
+.stickyheadermaindiv {
+  /* border: 2px solid yellow; */
+  height: 11vh;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  /* position: sticky;
+    top: 0; */
+  background-color: white;
+
+  /* z-index: 20; */
+}
+.bluelogodiv img {
+  height: 36px;
+  width: 113px;
+}
+.stickynavlinks {
+  /* border: 2px solid green; */
+  display: flex;
+  justify-content: center;
+}
+.navlinkslist {
+  margin-right: 140px;
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  height: 58px;
+  width: 700px;
+  /* border: 2px solid red; */
+  align-items: center;
+  justify-content: center;
+}
+.navlinkslist li {
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid green; */
+  font-size: 12px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: inherit;
+}
+.sh-flightsimg {
+  background-image: url("../../../public/assets/Images/headerimages.png");
+  background-position: -3px -26.5px;
+  height: 20px;
+  width: 25px;
+  background-size: 156px 240px;
+}
+.sh-hotelimg {
+  background-image: url("../../../public/assets/Images/headerimages.png");
+  background-position: -36.5px 0;
+  height: 24px;
+  width: 21.5px;
+  background-size: 156px 240px;
+}
+.sh-homestaysimg {
+  background-image: url("../../../public/assets/Images/headerimages.png");
+  background-position: -34px -50px;
+  height: 22px;
+  width: 26.4px;
+  background-size: 156px 240px;
+}
+.sh-holidayimg {
+  background-image: url("../../../public/assets/Images/headerimages.png");
+  background-position: -65px -2.2px;
+  height: 20px;
+  width: 25px;
+  background-size: 156px 240px;
+}
+.sh-trainimg {
+  background-image: url("../../../public/assets/Images/headerimages.png");
+  background-position: -94px -1.8px;
+  height: 22px;
+  width: 28px;
+  background-size: 156px 240px;
+}
+.sh-busesimg {
+  background-image: url("../../../public/assets/Images/headerimages.png");
+  background-position: -126px -1.2px;
+  height: 21.6px;
+  width: 25.8px;
+  background-size: 156px 240px;
+}
+.sh-cabsimg {
+  background-image: url("../../../public/assets/Images/headerimages.png");
+  background-position: -66px -49px;
+  height: 22.2px;
+  width: 23.4px;
+  background-size: 156px 240px;
+}
+.sh-foreximg {
+  background-image: url("../../../public/assets/Images/headerimages.png");
+  background-position: -100px -50px;
+  height: 20px;
+  width: 18px;
+  background-size: 156px 240px;
+}
+.sh-travelinsuranceimg {
+  background-image: url("../../../public/assets/Images/headerimages.png");
+  background-position: -126px -46.7px;
+  height: 29px;
+  width: 25px;
+  background-size: 156px 240px;
+}
+.sh-logindropdown {
+  /* border: 2px solid blue; */
+  display: flex;
+  gap: 10px;
+  font-size: 12px;
+  font-weight: 900;
+  height: 35px;
+  width: 130px;
+  align-items: center;
+  cursor: pointer;
+}
+.sh-loginlogo {
+  /* margin-left: 50px; */
+  background-image: linear-gradient(45deg, #ace143, #219393);
+  border-radius: 50%;
+  height: 25px;
+  padding: 6px;
+  width: 25px;
+}
+.sh-loginlogowhite {
+  background-image: url("../../../public/assets/Images/headerimages.png");
+  background-color: transparent;
+  background-position: -177px -350px;
+  background-size: 260px 400px;
+  height: 20px;
+  width: 20px;
+}
+.login-para {
+  text-align: left;
+}
+.sh-countryselectmaindiv {
+  cursor: default;
+  margin-left: 10px;
+  /* border: 2px solid blue; */
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  height: 35px;
+}
+.country {
+  font-size: 10px;
+}
+.sh-bottomdiv {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.sh-flag {
+  background-image: url("../../../public/assets/Images/flag.png");
+  background-position: 0 0;
+  height: 12px;
+  width: 15px;
+  background-size: 16px 74px;
+}
+.sh-countryindia {
+  font-size: 10px;
+  font-weight: 700;
+}
+.sh-languageselector {
+  cursor: default;
+  margin-left: 10px;
+  /* border: 2px solid blue; */
+  display: flex;
+  flex-direction: column;
+  /* gap: 7px; */
+  height: 35px;
+}
+.sh-language {
+  font-size: 10px;
+}
+.sh-language-btm {
+  font-size: 10px;
+  font-weight: 900;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sticky-linktohome {
+  text-decoration: none;
+}
+.afterloginorcreateaccntsticky {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 34px;
+  font-size: 12px;
+  font-weight: 900;
+  margin-right: 10px;
+}
+
+.stickyuserDropdown {
+  cursor: pointer;
+  width: 150px;
+  height: 8rem;
+  background: #fff;
+  border-radius: 4px;
+  position: absolute;
+  top: 7.5vh;
+  right: 17.5rem;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.2);
+  z-index: 50;
+  max-height: 200px;
+}
+.fadeIndown,
+.logoutbtn {
+  font-size: large;
+  margin-top: 6px;
+  padding: 15px;
+  gap: 8px;
+  color: black;
+  display: flex;
+  font-weight: 600;
+}
+:hover.fadeIndown:hover,
+.logoutbtn:hover {
+  background-color: azure;
+}

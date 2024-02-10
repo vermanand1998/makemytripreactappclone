@@ -1,0 +1,86 @@
+.gpaymain-container {
+  /* border: 1px solid red; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.gpay-payment-div {
+  border-radius: 4px;
+  border: solid 1px #dfdfdf;
+  padding: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.gpayicondiv {
+  background-image: url("../../../public/assets/images/paymentsprite.png");
+  margin-bottom: 15px;
+  background-position: -190px -36px;
+  height: 19px;
+  width: 19px;
+  background-size: 242px 326px;
+}
+.gpay-payment-div p {
+  margin: 0 0 8px 0;
+  padding: 0;
+  color: #000;
+  font-weight: 700;
+  align-items: baseline;
+}
+.gpay-input-btn {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  height: auto;
+}
+.gpay-input-btn input {
+  position: relative;
+  width: 100%;
+  border: solid 1px #9b9b9b;
+  border-radius: 4px;
+  transition: 0.1s ease-out;
+  /* height: 40px; */
+  width: 212px;
+  font-size: 14px;
+  padding: 12px 15px;
+  color: #000;
+  background: transparent;
+  font-weight: 700;
+}
+.enabled {
+  background-image: linear-gradient(96deg, #53b2fe, #065af3);
+}
+.gpay-input-btn button {
+  border: none;
+  border-radius: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.2);
+  color: #fff;
+  cursor: pointer;
+  height: 40px;
+  font-size: 16px;
+  width: 214px;
+}
+.amounttopay {
+  margin-right: 5px;
+  font-weight: 900;
+  font-size: 20px;
+  text-align: left;
+}
+.gpay-termsandconditions {
+  text-align: left;
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+  font-weight: 900;
+}
+.gpay-termsandconditions span {
+  color: #008cff;
+}

@@ -1,0 +1,30 @@
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+.otherwidget-maindiv {
+  height: 325px;
+  padding: 50px 20px 0px 20px;
+  margin-bottom: 40px;
+  background-color: white;
+  position: relative;
+  z-index: 1;
+  border-radius: 8px;
+  top: -50px;
+  font-size: 40px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3fa4f6;
+}
+.otherwidget-maindiv p {
+  overflow: hidden;
+  white-space: nowrap;
+  /* border-right: .15em solid orange; */
+  animation: typing 6s steps(40, end), blink-caret 0.75s step-end infinite;
+}

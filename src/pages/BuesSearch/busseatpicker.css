@@ -1,0 +1,173 @@
+.bus-seatPicker-container {
+  background-color: #ffffff;
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.13) 0px 0.2rem 1.2rem 0px;
+  padding: 0px;
+  border: 1px solid #e7e7e7;
+  border-top: none;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  /* border: 1px solid blue; */
+  border-radius: 0 0 12px 12px;
+  overflow: hidden;
+}
+
+.seat-picker-div {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  border-right: 1px solid #e7e7e7;
+}
+
+.seat-picker-header,
+.point-picker-header {
+  background: linear-gradient(90deg, #f2f2f2, hsla(0, 0%, 94.9%, 0));
+  padding: 8px 20px;
+  text-align: left;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 900;
+  color: #4a4a4a;
+}
+
+.point-picker-div {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 462px;
+}
+
+.child-board-drop {
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-direction: row;
+  padding: 8px 20px;
+  width: auto;
+}
+
+.br-dr-text {
+  padding: 8px 12px;
+  background: #f2f2f2;
+  font-weight: 900;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #4a4a4a;
+  margin: 0;
+  border-radius: 12px 12px 0 0;
+}
+
+.br-dr-box {
+  /* border: 1px solid red; */
+  height: 120px;
+  width: 490px;
+  margin-right: 15px;
+  border-radius: 12px;
+  border: 1px solid #cecece;
+  display: flex;
+  flex-direction: column;
+}
+
+.time-br-dp {
+  color: #757575;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 0 8px;
+}
+
+.add-br-dp {
+  color: #4a4a4a;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0 8px;
+}
+
+.avail-book-text {
+  color: #929292;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.seats-in-bus {
+  /* border: 1px solid red; */
+  width: 320px;
+  height: auto;
+  border: 1px solid #cecece;
+  margin-left: 120px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  border-radius: 12px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.seats-in-bus div {
+  /* border: 1px solid green; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.seat-icon-bus {
+  background: url("../../../public/assets/Images/busListingSprite.png");
+  background-size: 350px 500px;
+  background-position: -148px -89px;
+  width: 26px;
+  height: 26px;
+  margin-bottom: 4px;
+}
+.seat-icon-bus-selected {
+  background: url("../../../public/assets/Images/busListingSprite.png");
+  background-size: 350px 500px;
+  background-position: -127px -381px;
+  width: 26px;
+  height: 26px;
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+
+.seatconfirm-and-continuebtn {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-top: 1px solid #e7e7e7;
+  padding: 10px 20px;
+}
+.seats-price-div {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.selectedseats-text {
+  margin-bottom: 10px;
+  color: #4a4a4a;
+  font-weight: 900;
+  font-size: 16px;
+}
+.selected-seat-price {
+  color: #4a4a4a;
+  font-weight: 900;
+  font-size: 16px;
+}
+.seat-pick-btn {
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.21);
+  background-image: linear-gradient(96deg, #53b2fe, #065af3 100%);
+  padding: 12px 170px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 900;
+  border: none;
+}

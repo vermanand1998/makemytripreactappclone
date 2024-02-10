@@ -1,0 +1,109 @@
+.travelForPopup {
+  width: 166px;
+  background: #fff;
+  border-radius: 8px;
+  position: absolute;
+  top: 21vh;
+  right: 6rem;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+.travelForPopup li {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.travelForPopup li:hover {
+  background-color: rgb(232, 232, 232);
+}
+.fltTravellers {
+  border-radius: 4px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.2);
+  position: absolute;
+  right: 2rem;
+  top: 20vh;
+  width: 480px;
+  height: 35vh;
+  padding: 20px 40px;
+  z-index: 1;
+}
+.rmsGst {
+  border-radius: 4px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.2);
+  position: absolute;
+  right: 2rem;
+  top: 21vh;
+  width: 480px;
+  height: 35vh;
+  padding: 20px 40px;
+  z-index: 1;
+}
+.gbTravellers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.gbTravellers :nth-child(1) {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.rmsGst-hw {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.rmsGst-hw :nth-child(1) {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.guestCounter {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 36px;
+  background: rgb(255, 255, 255);
+  border: 2px solid rgb(225, 231, 238);
+  border-radius: 8px;
+}
+.travelClassList li {
+  display: inline-flex;
+  border-radius: 4px;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 24px;
+  align-items: center;
+  font-size: 12px;
+  width: auto;
+  height: 32px;
+  padding: 0 10px;
+  font-weight: 600;
+}
+.travelClass p {
+  font-size: large;
+  font-weight: 600;
+  margin: 25px 0 13px;
+}
+.travellerApplyBtn {
+  width: 88px;
+  height: 32px;
+  border-radius: 34px;
+  background-image: linear-gradient(93deg, #53b2fe, #065af3);
+  box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.2);
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-left: 20rem;
+}
+.travelClassList li:hover {
+  background-color: #008cff;
+  color: white;
+}
+.activeclass {
+  background-color: #008cff;
+  color: white;
+}

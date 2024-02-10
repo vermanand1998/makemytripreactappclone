@@ -1,0 +1,137 @@
+.dwnldappmain {
+  /* border: 2px solid red; */
+  padding: 10px 60px 40px 40px;
+  border-radius: 10px;
+  box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  margin-top: 35px;
+  height: 220px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.dwnldappleftcontainer {
+  /* border: 1px solid yellow; */
+  width: 750px;
+  height: 160px;
+}
+.left-topdiv {
+  cursor: default;
+  height: 96px;
+  width: 650px;
+  display: flex;
+  /* border: 1px solid red; */
+}
+.appdwnldiconimg {
+  /* border: 1px solid blue; */
+  background-image: url("../../../public/assets/Images/appdetails.png");
+  width: 92px;
+  height: 96px;
+  transform: scale(0.6);
+  background-position: -155px -4px;
+  background-size: 250px 250px;
+}
+.dwnld-div {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.dwnld-div h1 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 900;
+}
+.dwnld-div p {
+  margin: 5px 0 0 0;
+  font-size: 14px;
+  text-align: left;
+  /* border: 1px solid blue; */
+  /* width: 600px; */
+}
+.dwnld-div p span {
+  font-weight: 700;
+}
+.left-bottomdiv {
+  /* border: 1px solid black; */
+  /* margin: 40px 40px 40px 30px; */
+  margin: 30px 0 0 30px;
+  width: 515px;
+  height: 37px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.phn-nmbr-input {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  gap: 10px;
+  border: 1px solid black;
+  border-radius: 4px 0 0 4px;
+  height: 37px;
+  width: 369px;
+}
+.phn-nmbr-input img {
+  height: 22px;
+  width: 23px;
+  margin-left: 10px;
+}
+.phn-nmbr-input input {
+  border: 0;
+}
+.phn-nmbr-input input:focus {
+  outline: none;
+}
+.getapplink {
+  cursor: pointer;
+  height: 37px;
+  width: 146px;
+  border: solid 1px #008cff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 4px 4px 0;
+  font-weight: 900;
+  color: #008cff;
+}
+
+.dwnldapprightcontainer {
+  /* border: 1px solid blue; */
+  width: 290px;
+  height: 111px;
+  display: flex;
+}
+.getfromstore {
+  cursor: pointer;
+  /* border: 1px solid yellow; */
+  width: 149px;
+  display: flex;
+  flex-direction: column;
+}
+.getfromplaystore {
+  background-image: url("../../../public/assets/Images/appdetails.png");
+  width: 149px;
+  height: 44px;
+  background-position: -3px -55px;
+  margin: 0 0 20px;
+  background-size: 250px 250px;
+}
+.getfromapplestore {
+  background-image: url("../../../public/assets/Images/appdetails.png");
+  width: 149px;
+  height: 44px;
+  background-position: -3px -6px;
+  background-size: 250px 250px;
+}
+.mmtqrcode {
+  /* border: 1px solid green; */
+  width: 105px;
+  height: 105px;
+  margin-bottom: 3px;
+  margin-left: 30px;
+  background-size: 250px 250px;
+}

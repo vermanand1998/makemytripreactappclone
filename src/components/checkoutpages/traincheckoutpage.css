@@ -1,0 +1,210 @@
+.travellerInfo .travellerHead {
+  background-color: #0a223d;
+}
+.travellerInfo h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  padding: 21px 0;
+  width: 1200px;
+  margin: 0 auto;
+}
+.railTravellersWrapper {
+  background: #fff;
+}
+.railTravellersContainer {
+  margin: 0 auto;
+  width: 1200px;
+  display: flex;
+}
+.appendRight30 {
+  margin-right: 30px;
+}
+.travellerInfo .leftSection {
+  width: 820px;
+}
+.appendTop30 {
+  margin-top: 30px;
+}
+.trdInfo {
+  width: 820px;
+}
+.makeFlex.column {
+  flex-direction: column;
+}
+.makeFlex {
+  display: flex;
+}
+.appendBottom30 {
+  margin-bottom: 30px;
+}
+.makeRelative {
+  position: relative;
+}
+.appendBottom50 {
+  margin-bottom: 50px;
+}
+.makeFlex.spaceBetween {
+  justify-content: space-between;
+}
+.makeFlex.end {
+  align-items: flex-end;
+}
+.appendBottom5 {
+  margin-bottom: 5px;
+}
+.appendRight50 {
+  margin-right: 50px;
+}
+.makeFlex.hrtlCenter {
+  align-items: center;
+}
+.latoBlack {
+  font-weight: 900;
+}
+.font22 {
+  font-size: calc(var(--font-scale, 1) * 22px);
+  line-height: 22px;
+  margin-top: 13px;
+}
+.lightGreyText {
+  color: #9b9b9b;
+}
+.bdrTop {
+  width: 40px;
+  height: 1px;
+  background-color: #e7e7e7;
+  margin-right: 20px;
+  margin-top: -21px;
+}
+.appendRight20 {
+  margin-right: 20px;
+}
+.darkGreyText {
+  color: #4a4a4a;
+}
+.appendBottom10 {
+  margin-bottom: 10px;
+}
+.appendBottom20 {
+  margin-bottom: 20px;
+}
+.latoBold {
+  font-weight: 700;
+}
+.appendTop15 {
+  margin-top: 15px;
+}
+.appendRight40 {
+  margin-right: 40px;
+}
+.trStatusBlock {
+  border-radius: 4px;
+  border: 1px solid #9b9b9b;
+  background-color: #fff;
+  padding: 10px 20px;
+  width: 219px;
+}
+.orangeText {
+  color: #ff664b;
+}
+.trdInfo .selectedQuotaContainer {
+  width: 520px;
+  margin-left: 0;
+}
+.cursorPointer {
+  cursor: pointer;
+}
+.selectedQuotaContainer .selectedQuota {
+  width: 160px;
+  padding: 6px 0;
+  background: #fff;
+  border-radius: 4px;
+  align-items: center;
+  border: 1px solid #9b9b9b;
+}
+
+.trdInfo .selectedQuotaContainer .selectedQuota {
+  width: 520px;
+}
+
+.trdInfo .selectedQuotaContainer .selectedQuota span:nth-child(2) {
+  padding-right: 25px;
+}
+.selectedQuotaContainer .selectedQuota span:nth-child(2) {
+  padding-left: 0;
+  min-height: 24px;
+  white-space: nowrap;
+}
+.latoRegular {
+  font-weight: 400;
+}
+.selectedQuotaContainer .selectedQuota span {
+  padding: 5px;
+}
+.rightrailSection {
+  width: 310px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(138, 107, 118, 0.08);
+  border: 1px solid #bababa;
+  border-radius: 4px;
+  margin-bottom: 50px;
+  margin-left: 30px;
+  top: 30px;
+}
+.appendBottom20 {
+  margin-bottom: 20px;
+}
+.fareSummary {
+  background-color: #fff;
+  border-radius: 2px;
+  padding: 15px;
+}
+.fareBreakWrapper {
+  border-bottom: 1px solid #000;
+}
+.fareTypeWrap {
+  border-bottom: 1px solid #dfdfdf;
+  padding: 12px 0;
+}
+.fareRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.appendRight10 {
+  margin-right: 10px;
+}
+
+.iconPlusImg {
+  width: 16px;
+  height: 16px;
+}
+.bgProperties {
+  background-image: url("../../../public/assets/Images/plusicon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  background-size: contain;
+}
+.fareHeader {
+  font-size: calc(var(--font-scale, 1) * 14px);
+  font-weight: 700;
+}
+.fareFooter {
+  padding: 15px 0;
+}
+.payNowWrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  background-color: #bbfdfc;
+  border-radius: 2px;
+}
+.payandbook {
+  padding: 5px;
+  border-radius: 4px;
+  text-align: center;
+  background-color: rgb(237, 242, 242);
+}

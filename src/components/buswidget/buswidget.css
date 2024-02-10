@@ -1,0 +1,147 @@
+.buseswidgetmaindiv {
+  height: 318px;
+  padding: 55px 10px 0px 10px;
+  margin-bottom: 40px;
+  background-color: white;
+  position: relative;
+  z-index: 1;
+  border-radius: 8px;
+  top: -50px;
+  font-size: 14px;
+}
+.bw-upperdiv {
+  cursor: default;
+  padding-top: 1rem;
+  font-weight: 600;
+}
+.bw-detailsdiv {
+  border: solid 1px #e7e7e7;
+  cursor: pointer;
+  width: 100%;
+  height: 125px;
+  margin: 30px auto 20px;
+  border-radius: 10px;
+  display: flex;
+}
+.bw-from {
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+  width: 440px;
+  padding: 10px 19px;
+  border-right: solid 1px #e7e7e7;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.bw-from p:nth-child(1) {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+.bw-from p:nth-child(2) {
+  margin: 0;
+  padding: 0px;
+  margin: 0px;
+  font-size: 30px;
+  font-weight: 900;
+}
+.bw-from p:nth-child(2) {
+  margin: 0;
+  padding: 0;
+}
+.bw-to {
+  width: 440px;
+  padding: 10px 19px;
+  border-right: solid 1px #e7e7e7;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.bw-to p:nth-child(1) {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+.bw-to p:nth-child(2) {
+  margin: 0;
+  padding: 0px;
+  margin: 0px;
+  font-size: 30px;
+  font-weight: 900;
+}
+.bw-to p:nth-child(2) {
+  margin: 0;
+  padding: 0;
+}
+
+.bw-traveldate {
+  /* border: 1px solid red; */
+  border-radius: 0 10px 10px 0;
+  width: 185px;
+  padding: 10px 19px;
+  /* border-right: solid 1px #e7e7e7; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.bw-traveldateheaddiv {
+  display: flex;
+  cursor: pointer;
+}
+.bw-traveldate p:nth-child(1) {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+.bw-traveldate p:nth-child(2) {
+  margin: 0;
+  padding: 0;
+}
+.bw-traveldate p span:nth-child(1) {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  font-weight: 900;
+}
+.bw-traveldate p:nth-child(3) {
+  margin: 0;
+  padding: 0;
+}
+
+.bw-searchbtndiv {
+  position: absolute;
+  top: 35.5vh;
+  left: 33.5vw;
+}
+.fltSwipCircle {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  margin-left: -20px;
+  border-radius: 100%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 30px 0 rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  cursor: pointer;
+  margin-top: 35px;
+}
+.flightsSprite {
+  background-image: url(../../../public/assets/Images/alllogo.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-size: 200px 650px;
+  font-size: 0px;
+  flex-shrink: 0;
+  width: 15px;
+  height: 11px;
+  background-position: -149px -103px;
+}
+.bw-from:hover {
+  background-color: #eaf5ff;
+}
+.bw-to:hover {
+  background-color: #eaf5ff;
+}
+.bw-traveldate:hover {
+  background-color: #eaf5ff;
+}

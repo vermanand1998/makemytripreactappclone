@@ -1,0 +1,73 @@
+.giftcardwidget-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.giftcard-head {
+  margin: 0 0 15px 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 16px;
+}
+.giftcard-options-div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.giftcard-option {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 78px;
+  border-radius: 4px;
+  border: solid 1px #dfdfdf;
+  position: relative;
+  outline: none;
+  margin: 0px 7px 14px 0;
+  padding: 5px;
+}
+.giftcard-option p {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 900;
+  padding: 0;
+  margin: 0;
+}
+.apb-img {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 10px;
+}
+.icc-img {
+  background-image: url("../../../public/assets/images/paymentsprite.png");
+  background-position: -27px -62px;
+  height: 16px;
+  width: 20px;
+  background-size: 242px 326px;
+  margin-bottom: 10px;
+}
+.mw-img {
+  margin-bottom: 10px;
+  width: 24px;
+  height: 24px;
+}
+.pz-img {
+  margin-bottom: 10px;
+  width: 24px;
+  height: 24px;
+}
+.ap-img {
+  margin-bottom: 10px;
+  width: 24px;
+  height: 24px;
+}
+.mmtgc-img {
+  background-image: url("../../../public/assets/images/paymentsprite.png");
+  background-size: 242px 326px;
+  margin-bottom: 10px;
+  background-position: -54px -88px;
+  height: 16px;
+  width: 24px;
+}

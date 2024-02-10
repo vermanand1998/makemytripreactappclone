@@ -1,0 +1,554 @@
+.busessearch {
+  height: 150vh;
+}
+.busessearch-headerdiv {
+  /* border: 1px solid red; */
+  height: 76px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #0a223d;
+  font-weight: 400;
+  padding: 11px 30px 11px 30px;
+  position: sticky;
+  top: 0;
+  /* overflow: hidden; */
+}
+/* .busessearch-headerdiv div {
+  border: 1px solid red;
+  padding: 4px 9px;
+  background: hsla(0, 0%, 100%, 0.1);
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  border-radius: 8px;
+} */
+.busessearch-headerdiv div p:first-child {
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 900;
+  color: #0084ff;
+  padding: 4px 9px 5px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  height: 12px;
+}
+.bussearch-selecteditem {
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 16px;
+  padding: 0 9px 4px;
+  color: #fff;
+  margin: 0;
+  display: flex;
+}
+.bussearch-searchbtn {
+  margin-left: 13%;
+  font-size: 18px;
+  font-weight: 900;
+  background: #008cff;
+  border: 1px solid #008cff;
+  border-radius: 8px;
+  color: #fff;
+  width: 159px;
+  height: 44px;
+}
+
+.busessearch-bottomdiv {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: row;
+  padding: 0 30px 0 30px;
+  background-color: rgb(245, 245, 245);
+}
+.bs-bottom-leftdiv {
+  /* border: 1px solid blue; */
+  /* padding: 0px 10px 0px 10px; */
+  /* width: 319px; */
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #fff;
+}
+.bs-filters-heading {
+  width: 100%;
+  border-bottom: 1px solid #d8d8d8;
+  text-align: left;
+  padding: 12px 16px;
+}
+.bs-filters-heading h3 {
+  font-size: 18px;
+  counter-reset: #4a4a4a;
+  padding: 0;
+  margin: 0;
+}
+
+.AC-filter-div {
+  /* border: 1px solid red; */
+  padding: 12px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.ac-filter-div-title {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.ac-category-div {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  gap: 20px;
+}
+.ac-category {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 138px;
+  height: 32px;
+  cursor: pointer;
+  border: 1px solid #d8d8d8;
+  border-radius: 8px;
+  margin-right: 12px;
+}
+.ac-category-subdiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 60px;
+}
+.ac-img {
+  background-image: url("../../../public/assets/Images/busListingSprite.png");
+  background-size: 350px 500px;
+  width: 15px;
+  height: 17px;
+  background-position: -40px -15px;
+  margin-right: 11px;
+}
+.ac-category p {
+  margin: 0;
+  padding: 0;
+}
+.non-ac-catogory {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 138px;
+  height: 32px;
+  cursor: pointer;
+  border: 1px solid #d8d8d8;
+  border-radius: 8px;
+}
+.nonac-img {
+  background-image: url("../../../public/assets/Images/busListingSprite.png");
+  background-size: 350px 500px;
+  width: 17px;
+  height: 17px;
+  margin-right: 11px;
+  background-position: -278px -231px;
+}
+
+.departure-time-div {
+  padding: 12px 16px;
+  display: flex;
+  flex-direction: column;
+}
+.departure-time-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  padding: 0;
+  text-align: left;
+}
+.departuretime-limit-maindiv {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  gap: 20px;
+}
+.departtime-subdiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 60px;
+}
+.depart-timerangediv {
+  margin: 2px 8px 9px 2px;
+  border: 1px solid #d8d8d8;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 11px 5px;
+  width: 126px;
+}
+.departuretime-limit-maindiv div p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: #4a4a4a;
+}
+.dt-6amto11pm-img {
+  background: url("../../../public/assets/Images/busListingSprite.png");
+  background-position: -127px -13px;
+  width: 21px;
+  height: 19px;
+  background-size: 350px 500px;
+  margin-bottom: 6px;
+}
+.dt-11amto6pm-img {
+  background: url("../../../public/assets/Images/busListingSprite.png");
+  background-position: -159px -13px;
+  width: 21px;
+  height: 21px;
+  background-size: 350px 500px;
+  margin-bottom: 6px;
+}
+.dt-6pmto11pm-img {
+  background: url("../../../public/assets/Images/busListingSprite.png");
+  background-position: -191px -16px;
+  width: 17px;
+  height: 16px;
+  background-size: 350px 500px;
+  margin-bottom: 6px;
+}
+.dt-11pmto6am-img {
+  background: url("../../../public/assets/Images/busListingSprite.png");
+  background-position: -222px -14px;
+  width: 16px;
+  height: 18px;
+  background-size: 350px 500px;
+  margin-bottom: 6px;
+}
+
+.arrival-time-div {
+  padding: 12px 16px;
+  display: flex;
+  flex-direction: column;
+}
+.arrival-time-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  padding: 0;
+  text-align: left;
+}
+.arrivaltime-limit-maindiv {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  gap: 20px;
+}
+.arrivaltime-subdiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 60px;
+}
+.arrival-timerangediv {
+  margin: 2px 8px 9px 2px;
+  border: 1px solid #d8d8d8;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 11px 5px;
+  width: 126px;
+}
+.arrivaltime-limit-maindiv div p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: #4a4a4a;
+}
+.at-6amto11pm-img {
+  background: url("../../../public/assets/Images/busListingSprite.png");
+  background-position: -127px -13px;
+  width: 21px;
+  height: 19px;
+  background-size: 350px 500px;
+  margin-bottom: 6px;
+}
+.at-11amto6pm-img {
+  background: url("../../../public/assets/Images/busListingSprite.png");
+  background-position: -159px -13px;
+  width: 21px;
+  height: 21px;
+  background-size: 350px 500px;
+  margin-bottom: 6px;
+}
+.at-6pmto11pm-img {
+  background: url("../../../public/assets/Images/busListingSprite.png");
+  background-position: -191px -16px;
+  width: 17px;
+  height: 16px;
+  background-size: 350px 500px;
+  margin-bottom: 6px;
+}
+.at-11pmto6am-img {
+  background: url("../../../public/assets/Images/busListingSprite.png");
+  background-position: -222px -14px;
+  width: 16px;
+  height: 18px;
+  background-size: 350px 500px;
+  margin-bottom: 6px;
+}
+
+.bs-bottom-rightdiv {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 20px;
+}
+.bus-sortby-div {
+  /* border: 1px solid rebeccapurple; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 6px 20px;
+  margin-top: 20px;
+  border: 1px solid #e7e7e7;
+  border-radius: 16px;
+  background-color: #fff;
+}
+.bus-sortby-div p {
+  margin-right: 8px;
+  font-weight: 900;
+  font-size: 10px;
+  color: #4a4a4a;
+  text-transform: uppercase;
+  padding: 10px;
+  margin: 0;
+}
+.bus-sortby-div ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  color: #4a4a4a;
+}
+.bus-sortby-div ul li {
+  cursor: pointer;
+  padding: 5px 12px;
+  font-size: 14px;
+}
+.bus-sortby-div ul li:hover {
+  background: #f2f2f2;
+  border-radius: 8px;
+}
+.sortactive {
+  background: #eaf5ff;
+  border-radius: 8px;
+  color: #008cff;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 5px 12px;
+}
+.busdetails-maindiv {
+  border: 1px solid green;
+  background-color: #fff;
+  margin: 15px 0 0;
+  border-radius: 16px 16px 0 0;
+  border: 1px solid #e7e7e7;
+  /* width: 100%; */
+  /* height: 175px; */
+}
+.busdetails-topdiv {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+}
+.bdtd-busdetails {
+  /* border: 1px solid blue; */
+  padding: 15px 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.busnamedetails-div {
+  margin: 0 50px 22px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.busnamedetails-div p:first-child {
+  margin: 0 15px 8px 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+.busnamedetails-div p:nth-child(2) {
+  /* border: 1px solid red; */
+  font-size: 16px;
+  color: #4a4a4a;
+  margin: 0;
+  padding: 0;
+}
+.bustimedetails-div {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+.busdeparttime-div span:first-child {
+  font-size: 18px;
+  font-weight: 900;
+  margin-right: 4px;
+}
+.busdeparttime-div span:nth-child(2) {
+  font-size: 14px;
+  color: #4a4a4a;
+  text-transform: uppercase;
+}
+.bustime-seperationline {
+  width: 29px;
+  height: 1px;
+  margin: 13px 8px 10px;
+  border-top: 1.4px solid #e7e7e7;
+}
+.busarrivaltime-div span:first-child {
+  font-size: 18px;
+  font-weight: 900;
+  margin-right: 4px;
+}
+.busarrivaltime-div span:nth-child(2) {
+  font-size: 14px;
+  color: #4a4a4a;
+  text-transform: uppercase;
+}
+.busfare-div {
+  margin-left: 32px;
+  font-size: 20px;
+  font-weight: 900;
+}
+.bus-rating-seats {
+  /* border: 1px solid green; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px 25px;
+  margin-bottom: 10px;
+}
+.bus-rating-div {
+  background-color: rgb(26, 121, 113);
+  width: 40px;
+  height: 22px;
+  border-radius: 4px;
+  color: rgb(255, 255, 255);
+  margin-right: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.ratingstar-img {
+  background: url("../../../public/assets/Images/busListingSprite.png");
+  background-size: 350px 500px;
+  background-position: -132px -56px;
+  width: 9px;
+  height: 9px;
+  margin-right: 4px;
+}
+.seat-number {
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+}
+
+.busdetails-bottomdiv {
+  /* border: 1px solid yellowgreen; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 23px;
+  border-top: 1px solid #e7e7e7;
+}
+.busdetails-bottomdiv div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.busdetails-bottomdiv div span {
+  font-size: 12px;
+  margin-right: 20px;
+}
+.bus-amenty {
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 4px;
+  color: #302e2e;
+  font-weight: 500;
+  background-color: #d8d6d6;
+}
+.amenities-downicon {
+  font-size: 15px;
+  color: #757575;
+}
+.bus-selectseats-btn {
+  width: 180px;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  background: rgb(0, 140, 255);
+  border: 1px solid rgb(0, 140, 255);
+}
+.blue-text {
+  background: #eaf5ff;
+  color: #008cff;
+}
+.grey-text {
+  background-color: #f1ecec;
+  color: #6d6b6b;
+}
+.bs-busdetails-div,
+.bs-departdate-div {
+  cursor: pointer;
+  margin-left: 20px;
+}
+.busdropdown-maindiv {
+  /* border: 1px solid red; */
+  overflow: hidden;
+  z-index: 999999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 400px;
+  width: 314px;
+  background-color: white;
+  overflow: hidden;
+  z-index: 999999;
+  position: absolute;
+  top: 8vh;
+  left: 6vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 4px;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.2);
+  text-align: left;
+  font-size: 16px;
+}
+.bussearch-datepicker {
+  position: absolute;
+  top: 19vh;
+  left: 29vw;
+  z-index: 1000;
+}

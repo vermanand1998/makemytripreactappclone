@@ -1,0 +1,120 @@
+.offers-main {
+  /* border: 2px solid red; */
+  position: relative;
+  top: -20px;
+  height: 485px;
+  padding: 20px 40px 0px 40px;
+  border-radius: 10px;
+  box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+.great-less {
+  box-shadow: -1px 0px 3px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+}
+.offers-topdiv {
+  text-align: left;
+  /* border: 2px solid green; */
+  height: 40px;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+.offers-topdiv h1 {
+  font-weight: 900;
+  margin: 0;
+}
+.offers-topdiv-list {
+  gap: 25px;
+  cursor: pointer;
+  border-bottom: 1.5px solid #d8d8d8;
+  display: flex;
+  list-style: none;
+  height: 20px;
+  margin: 0;
+  padding: 0 0 10px 0;
+  align-items: center;
+  margin-top: 10px;
+}
+.offers-bottomdiv {
+  /* border: 2px solid black; */
+  height: 85%;
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(25, auto);
+  grid-template-rows: repeat(2, auto);
+  overflow-x: hidden;
+  overflow-y: hidden;
+  align-items: center;
+  justify-content: start;
+}
+.offers-bottomdiv::-webkit-scrollbar {
+  display: none;
+}
+.offers-btmdiv-griditem {
+  /* border: 1px solid #d8d8d8; */
+  margin: 5px 20px 20px 0;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.2);
+  /* width: 470px; */
+  width: 450px;
+}
+
+.griditem1-topdiv {
+  /* border: 2px solid green; */
+  /* height: 75%; */
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.griditem1-topdiv img {
+  object-fit: cover;
+  height: 134px;
+  width: 134px;
+  border-radius: 6px;
+}
+.griditem1-topdiv div {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  /* border: 2px solid blue; */
+  height: 134px;
+  align-items: flex-start;
+}
+.griditem1-topdiv div h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 900;
+}
+.griditem1-topdiv div p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+.griditem1-bottomdiv {
+  /* border: 2px solid red; */
+  height: 20%;
+  margin: 0;
+  padding: 0;
+}
+.griditem1-bottomdiv ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.griditem1-bottomdiv ul li:nth-child(1) {
+  font-size: 12px;
+}
+.griditem1-bottomdiv ul li:nth-child(2) {
+  font-size: 14px;
+}
+.griditem1-bottomdiv ul li:nth-child(3) {
+  font-size: 14px;
+  color: #008cff;
+  font-weight: 700;
+}
+.activeoffer {
+  color: #008cff !important;
+  font-weight: 700;
+}

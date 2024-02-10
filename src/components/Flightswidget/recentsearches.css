@@ -1,0 +1,84 @@
+.recentsearchmain {
+  /* border: 2px solid red; */
+  margin-top: 20px;
+  padding: 25px;
+  display: flex;
+  border-radius: 6px;
+  box-shadow: 0 1px 30px 0 rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+.headingdiv {
+  cursor: default;
+  display: flex;
+  /* border: 2px solid blue; */
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  font-size: 16px;
+  font-weight: 900;
+  gap: 5px;
+}
+.rs-middle-div,
+.rs-rightdiv {
+  border: 1px #008cff solid;
+  height: 96px;
+  width: 374px;
+  margin-right: 7px;
+  padding: 7px 10px 8px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.rs-middle-div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.rs-middle-div p:nth-child(1) {
+  color: #008cff;
+  font-weight: 900;
+  font-size: 14px;
+  margin: 0;
+  margin-bottom: 6px;
+}
+.rs-middle-div p:nth-child(2) {
+  font-weight: 700;
+  font-size: 14px;
+  margin: 0;
+}
+.rs-middle-div p:nth-child(3) {
+  font-size: 12px;
+  margin: 0;
+}
+.rs-middle-div p:nth-child(4) {
+  font-size: 12px;
+  margin: 0;
+  color: #9b9b9b;
+}
+.rs-rightdiv {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.rs-rightdiv p:nth-child(1) {
+  color: #008cff;
+  font-weight: 900;
+  font-size: 14px;
+  margin: 0;
+  margin-bottom: 6px;
+}
+.rs-rightdiv p:nth-child(2) {
+  font-weight: 700;
+  font-size: 14px;
+  margin: 0;
+}
+.rs-rightdiv p:nth-child(3) {
+  font-size: 12px;
+  margin: 0;
+}
+.rs-rightdiv p:nth-child(4) {
+  font-size: 12px;
+  margin: 0;
+  color: #9b9b9b;
+}

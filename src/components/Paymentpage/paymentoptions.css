@@ -1,0 +1,123 @@
+.paymentoptions-maindiv {
+  /* border: 1px solid pink; */
+  margin: -120px auto 0;
+  display: flex;
+  flex-direction: row;
+  padding: 0 0px 0 350px;
+}
+.paymentoptionslist {
+  /* border: 1px solid red; */
+  width: 270px;
+  background: #eaf5ff;
+  transition: ease all 0.4s;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.paymentoption-head {
+  font-size: 18px;
+  font-weight: 900;
+  margin: 0;
+  padding: 15px 20px;
+}
+.paymentoptionslist ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  margin: 0;
+}
+.paymentoptionslist ul li {
+  border-top: solid 1px #dfdfdf;
+  border-left: 4px solid #eaf5ff;
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: row;
+}
+/* .paymentoptionslist ul li:hover{ */
+.activewidget {
+  background-color: white;
+  border-left: 4px solid #008cff;
+}
+.upioptions-img {
+  background-image: url("../../../public/assets/images/paymentsprite.png");
+  background-position: -48px -114px;
+  margin-right: 17px;
+  height: 23px;
+  width: 16px;
+  background-size: 242px 326px;
+}
+.cardoptions-img {
+  background-image: url("../../../public/assets/images/paymentsprite.png");
+  background-size: 242px 326px;
+  margin-right: 10px;
+  background-position: -29px -88px;
+  height: 16px;
+  width: 23px;
+}
+.paylater-img {
+  background-image: url("../../../public/assets/images/paymentsprite.png");
+  background-size: 242px 326px;
+  margin-right: 10px;
+  background-position: -81px -87px;
+  height: 18px;
+  width: 24px;
+}
+.netbanking-img {
+  background-image: url("../../../public/assets/images/paymentsprite.png");
+  background-size: 242px 326px;
+  margin-right: 10px;
+  background-position: -184px -87px;
+  height: 18px;
+  width: 21px;
+}
+.giftcards-img {
+  background-image: url("../../../public/assets/images/paymentsprite.png");
+  background-size: 242px 326px;
+  margin-right: 8px;
+  background-position: -158px -87px;
+  height: 23px;
+  width: 24px;
+}
+.gpay-img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.options-text {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
+}
+.options-text p:first-child {
+  font-weight: 700;
+  margin: 0 10px 0 0;
+  padding: 0;
+  font-size: 16px;
+  color: #008cff;
+}
+.options-text p:nth-child(2) {
+  margin: 0 5px 0 0;
+  padding: 0;
+  color: #4a4a4a;
+  font-size: 12px;
+  font-weight: 900;
+  text-align: left;
+  height: 28px;
+  width: 190px;
+}
+
+.paymentoptions-paywindow {
+  width: 37vw;
+  padding: 20px 30px;
+  position: relative;
+  border-right: 1px solid rgb(181, 181, 181);
+  border-bottom: 1px solid rgb(181, 181, 181);
+  /* background: #f2f2f2; */
+  background: white;
+  border-radius: 0px 10px 10px 0;
+}

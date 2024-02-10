@@ -1,0 +1,227 @@
+.makeFlex.vrtlCenter {
+  justify-content: center;
+}
+
+.reviewHeaderWrapper {
+  background: #10223b;
+  padding: 15.5px 0;
+  width: 100%;
+  position: sticky;
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  top: 0;
+  z-index: 10;
+  color: #fff;
+}
+.makeFlex.spaceBetween {
+  justify-content: space-between;
+}
+.reviewHeaderContainer {
+  width: 1234px;
+}
+.busTravellersWrapper {
+  background: #ffffff;
+}
+.busTravellersContainer {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+.busTravellersContainer .leftSection {
+  width: 874px;
+  margin-bottom: 80px;
+}
+.appendRight20 {
+  margin-right: 20px;
+}
+.makeFlex.column {
+  flex-direction: column;
+}
+.busTravellersContainer .travellerBusInfoDetails {
+  margin-bottom: 16px;
+}
+.busTravellersContainer .card {
+  background-color: #fff;
+  border-radius: 16px;
+  border: 1px solid #e7e7e7;
+}
+.busTravellersContainer .cardPadding {
+  padding: 12px 20px;
+}
+.appendBottom6 {
+  margin-bottom: 6px;
+}
+.blackText {
+  color: #000000;
+}
+.makeFlex {
+  display: flex;
+}
+.latoBlack {
+  font-weight: 700;
+}
+
+.font18 {
+  font-size: calc(var(--font-scale, 1) * 18px);
+  line-height: 18px;
+}
+.blackText {
+  color: #000000;
+}
+.latoBold {
+  font-weight: 700;
+}
+.font14 {
+  font-size: calc(var(--font-scale, 1) * 14px);
+  line-height: 14px;
+}
+.appendBottom10 {
+  margin-bottom: 10px;
+}
+.defaultGreyText {
+  color: #4a4a4a;
+}
+.appendBottom2 {
+  margin-bottom: 2px;
+}
+.makeFlex.hrtlCenter {
+  align-items: center;
+}
+.busTravellersContainer .busFacilityStrip {
+  padding: 6px 20px;
+  background: hsla(0, 0%, 94.9%, 0.32);
+}
+.rating.ratingHigh {
+  background: #1a7971;
+}
+.textCenter {
+  text-align: center;
+}
+
+.bus-rating-div {
+  background-color: rgb(26, 121, 113);
+  width: 40px;
+  height: 22px;
+  border-radius: 4px;
+  color: rgb(255, 255, 255);
+  margin-right: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.ratingstar-img {
+  background: url("../../../public/assets/Images/busListingSprite.png");
+  background-size: 350px 500px;
+  background-position: -132px -56px;
+  width: 9px;
+  height: 9px;
+  margin-right: 4px;
+}
+.appendRight4 {
+  margin-right: 4px;
+}
+.makeFlex.row {
+  flex-direction: row;
+}
+.font18 {
+  font-size: calc(var(--font-scale, 1) * 18px);
+  line-height: 18px;
+}
+.makeRelative {
+  position: relative;
+}
+.maxHeight200 {
+  max-height: 200px;
+}
+.maxWidth200 {
+  max-width: 200px;
+}
+.busTravellersContainer .colorGrey {
+  color: #757575;
+}
+.latoRegular {
+  font-weight: 400;
+}
+.appendBottom8 {
+  margin-bottom: 8px;
+}
+.defaultGreyText {
+  color: #4a4a4a;
+}
+.reviewBusInfoWrapper .dottedLine {
+  width: 108px;
+  border-bottom: 1px solid #e7e7e7;
+  margin: 0 40px 5px;
+  padding-top: 8px;
+  line-height: 0.1em;
+}
+.font24 {
+  font-size: calc(var(--font-scale, 1) * 24px);
+  line-height: 24px;
+}
+.rightSection {
+  width: 360px;
+  position: sticky;
+  top: 70px;
+  overflow-y: auto;
+  max-height: 100vh;
+  padding-right: 8px;
+}
+.appendBottom20 {
+  margin-bottom: 20px;
+}
+.fareSummary {
+  background-color: #fff;
+  padding: 30px;
+}
+.fareBreakWrapper {
+  border-bottom: 1px solid #000;
+}
+.fareTypeWrap {
+  border-bottom: 1px solid #dfdfdf;
+  padding: 12px 0;
+}
+.fareRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.appendRight10 {
+  margin-right: 10px;
+}
+
+.iconPlusImg {
+  width: 16px;
+  height: 16px;
+}
+.bgProperties {
+  background-image: url("../../assets/Images/plusicon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  background-size: contain;
+}
+.fareHeader {
+  font-size: calc(var(--font-scale, 1) * 14px);
+  font-weight: 700;
+}
+.hotelfareFooter {
+  background-color: #f2f2f2;
+  padding: 15px 8px 15px;
+  font-weight: 500;
+}
+.busrightcontainer {
+  border: 1px solid #e7e7e7;
+  border-radius: 16px;
+}
+.totalprice {
+  display: flex;
+  justify-content: space-between;
+  padding: 7px;
+  background-color: rgb(137, 231, 198);
+  font-weight: 600;
+  border-radius: 4px;
+}

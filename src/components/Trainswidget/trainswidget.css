@@ -1,0 +1,185 @@
+.trainswidgetmaindiv {
+  height: 317px;
+  width: 100%;
+  padding: 65px 10px 0px 10px;
+  background-color: white;
+  position: relative;
+  z-index: 1;
+  border-radius: 8px;
+  top: -50px;
+  font-size: 14px;
+}
+.tw-upperdiv {
+  cursor: default;
+  font-weight: 600;
+  padding: 15px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+}
+.tw-upperdiv div ul {
+  margin-bottom: 10px;
+  list-style: none;
+  display: flex;
+  padding: 0;
+  gap: 20px;
+}
+.tw-bottomdiv {
+  cursor: pointer;
+  border: solid 1px #e7e7e7;
+  width: 100%;
+  height: 130px;
+  border-radius: 10px;
+  display: flex;
+  margin-right: 0;
+}
+.tw-from {
+  border-radius: 10px 0 0 10px;
+  height: 100%;
+  width: 350px;
+  padding: 10px 19px;
+  border-right: solid 1px #e7e7e7;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.tw-from p:nth-child(1) {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+.tw-from p:nth-child(2) {
+  margin: 0;
+  padding: 0px;
+  margin: 0px;
+  font-size: 30px;
+  font-weight: 900;
+}
+.tw-from p:nth-child(2) {
+  margin: 0;
+  padding: 0;
+}
+.tw-to {
+  width: 350px;
+  padding: 10px 19px;
+  border-right: solid 1px #e7e7e7;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.tw-to p:nth-child(1) {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+.tw-to p:nth-child(2) {
+  margin: 0;
+  padding: 0px;
+  margin: 0px;
+  font-size: 30px;
+  font-weight: 900;
+}
+.tw-to p:nth-child(2) {
+  margin: 0;
+  padding: 0;
+}
+.tw-traveldate {
+  width: 140px;
+  padding: 10px 19px;
+  border-right: solid 1px #e7e7e7;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.traveldateheaddiv {
+  display: flex;
+  cursor: pointer;
+}
+.tw-traveldate p:nth-child(1) {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+.tw-traveldate p:nth-child(2) {
+  margin: 0;
+  padding: 0;
+}
+.tw-traveldate p span:nth-child(1) {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  font-weight: 900;
+}
+.tw-traveldate p:nth-child(3) {
+  margin: 0;
+  padding: 0;
+}
+.tw-class {
+  border-radius: 0 10px 10px 0;
+  width: 240px;
+  padding: 10px 19px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.tw-class p:nth-child(1) {
+  display: flex;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+.tw-class p:nth-child(2) {
+  margin: 0;
+  padding: 0px;
+  margin: 0px;
+  font-size: 30px;
+  font-weight: 900;
+}
+.tw-class p:nth-child(2) {
+  margin: 0;
+  padding: 0;
+}
+.tw-searchbtndiv {
+  /* border: 2px solid red; */
+  position: absolute;
+  top: 35.5vh;
+  left: 33.5vw;
+}
+
+.fltSwipCircle {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  margin-left: -20px;
+  border-radius: 100%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 30px 0 rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  cursor: pointer;
+  margin-top: 38px;
+}
+.flightsSprite {
+  background-image: url(../../../public/assets/Images/alllogo.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-size: 200px 650px;
+  font-size: 0px;
+  flex-shrink: 0;
+  width: 15px;
+  height: 11px;
+  background-position: -149px -103px;
+}
+.tw-from:hover {
+  background-color: #eaf5ff;
+}
+.tw-to:hover {
+  background-color: #eaf5ff;
+}
+.tw-traveldate:hover {
+  background-color: #eaf5ff;
+}
+.tw-class:hover {
+  background-color: #eaf5ff;
+}

@@ -1,0 +1,126 @@
+.bnplw-main-container{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.bnpl-text{
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+.bnpl-benefits{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+    justify-content: space-between;
+}
+.bnpl-benefits li{
+    /* border: 1px solid red; */
+    width: 245px;
+    /* width: auto; */
+    height: 40px;
+    margin: 0 0 20px 0;
+    display: flex;
+    flex-direction: row;
+}
+.zero-percent-img{
+    margin-right: 15px;
+    width: 40px;
+    height: 40px;
+}
+.calender-img{
+    margin-right: 15px;
+    width: 40px;
+    height: 40px;
+}
+.nopaperwork-img{
+    margin-right: 15px;
+    width: 40px;
+    height: 40px;
+}
+.bnpl-description-div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.bnpl-description-div p:first-child{
+    font-weight: 700;
+    color: #249b95;
+    margin:0 0 5px 0;
+    font-size: 14px;
+    padding: 0;
+}
+.bnpl-description-div p:nth-child(2){
+    /* border:1px solid blue; */
+    font-size: 12px;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+}
+.paylater-eligibility-div{
+    display: flex;
+    flex-direction: column;
+    border: solid 1px #e7e7e7;
+    border-radius: 4px;
+    padding: 20px;
+    width: 448px;
+    height: 100px;
+}
+.bnpl-text-btn-div{
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 10px 0;
+    align-items: center;
+}
+.bnpl-text-btn-div p{
+    font-size: 16px;
+    font-weight: 700;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+.bnpl-text-btn-div button{
+    margin: 0 0 0 10px;
+    align-items: center;
+    border: none;
+    border-radius: 36px;
+    display: flex;
+    font-weight: 700;
+    justify-content: center;
+    outline: 0;
+    text-transform: uppercase;
+    background-image: linear-gradient(96deg,#53b2fe,#065af3);
+    box-shadow: 0 1px 7px 0 rgba(0,0,0,.2);
+    color: #fff;
+    cursor: pointer;
+    height: 40px;
+    min-width: 100px;
+    padding: 0 20px;
+}
+.bnpl-options-list{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.bnpl-options-list li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 40px;
+    border-radius: 4px;
+    border: solid 1px #e7e7e7;
+    background-color: #fff;
+    margin: 0 10px 0 0;
+}
+.bnpl-options-list li img{
+    width: 30px;
+    height: 30px;
+}

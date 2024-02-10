@@ -1,0 +1,66 @@
+.about {
+  cursor: default;
+  background-color: #e7e7e7;
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+.about-main-div {
+  /* border: 2px solid blue; */
+  display: flex;
+  height: 40vh;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.why-mmt {
+  width: 60%;
+  /* border: 2px solid rebeccapurple; */
+  height: 292px;
+  display: flex;
+  flex-direction: column;
+}
+.why-mmt h3 {
+  margin-bottom: 25px;
+  font-size: 17px;
+  text-align: left;
+}
+.why-mmt p {
+  font-size: 12px;
+  text-align: left;
+  color: #4a4a4a;
+}
+.booking-flights {
+  width: 60%;
+  /* border: 2px solid rebeccapurple; */
+  height: 292px;
+  display: flex;
+  flex-direction: column;
+}
+.booking-flights p {
+  font-size: 12px;
+  text-align: left;
+  color: #4a4a4a;
+}
+
+.booking-flights h3 {
+  font-size: 17px;
+  text-align: left;
+  margin-bottom: 25px;
+}
+.domestic-flights {
+  width: 60%;
+  /* border: 2px solid rebeccapurple; */
+  height: 292px;
+  display: flex;
+  flex-direction: column;
+}
+.domestic-flights h3 {
+  font-size: 17px;
+  text-align: left;
+  margin-bottom: 25px;
+}
+.domestic-flights p {
+  font-size: 12px;
+  text-align: left;
+  color: #4a4a4a;
+}
