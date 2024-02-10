@@ -3,7 +3,7 @@ import "./singlehotel.css";
 // import { MdKeyboardArrowDown } from "react-icons/md";
 import ImageCarousel from "../../pages/Hotelsearch/ImageCarousel";
 // import hotelroomsize from "../../../public/assets/images/image.png";
-import hotelroombed from "../../../public/assets/images/hotelroombed.png";
+import hotelroombed from "../../../public/assets/images/hotelroombed.jpg";
 import { TbMathGreater } from "react-icons/tb";
 import { Link, useParams } from "react-router-dom";
 import useFetch from "../../Hooks/useFetch";
