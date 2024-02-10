@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import logowhite from "../../../public/assets/images/logowhite.png";
+import {logowhite} from "../../../src/allimages";
 import { Link, useNavigate } from "react-router-dom";
 import "./topnavbar.css";
 import { BsChevronDown } from "react-icons/bs";
