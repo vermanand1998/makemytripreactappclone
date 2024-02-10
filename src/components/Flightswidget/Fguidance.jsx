@@ -1,9 +1,9 @@
 import React from "react";
 import "./fguidance.css";
 import { Container } from "@mui/material";
-import vandeflight from "../../../public/assets/images/vandeflight.png";
-import language from "../../../public/assets/images/language.png";
-import webcheckin from "../../../public/assets/images/webcheckin.png";
+import {vandeflight} from "../../../src/allimages";
+import {language} from "../../../src/allimages";
+import {webcheckin} from "../../../src/allimages";
 import { Link } from "react-router-dom";
 
 const Fguidance = () => {

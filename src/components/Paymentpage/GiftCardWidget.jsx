@@ -1,9 +1,9 @@
 import React from "react";
 import "./giftcardwidget.css";
-import airtelpaymentsbank from "../../../public/assets/images/Airtelpaymentsbank.png";
-import mobikwik from "../../../public/assets/images/Mobikwik.png";
-import payzapp from "../../../public/assets/images/Payzapp.png";
-import amazonpay from "../../../public/assets/images/Amazonpay.png";
+import {airtelpaymentsbank} from "../../../src/allimages";
+import {mobikwik} from "../../../src/allimages";
+import {payzapp} from "../../../src/allimages";
+import {amazonpay} from "../../../src/allimages";
 
 const GiftCardWidget = () => {
   return (

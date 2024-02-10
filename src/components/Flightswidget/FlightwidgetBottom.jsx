@@ -1,6 +1,6 @@
 import React from "react";
 import "./flightbottom.css";
-import fwad from "../../../public/assets/images/fwad.png";
+import {fwad} from "../../../src/allimages";
 import Offers from "../offers/Offers";
 import RecentSearches from "./RecentSearches";
 import Fguidance from "./Fguidance";

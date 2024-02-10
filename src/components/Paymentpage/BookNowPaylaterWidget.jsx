@@ -1,13 +1,13 @@
 import React from "react";
 import "./booknowpaylater.css";
-import zerointerest from "../../../public/assets/images/Zerointerest.png";
-import nodocumentbnpl from "../../../public/assets/images/Nodocumentbnpl.png";
-import creditperiod from "../../../public/assets/images/Creditperiod.png";
-import lazypay from "../../../public/assets/images/Lazypay.png";
-import simpl from "../../../public/assets/images/Simpl.png";
-import icicipaylater from "../../../public/assets/images/Icicipaylater.png";
-import olamoney from "../../../public/assets/images/Olamoney.png";
-import hdfc from "../../../public/assets/images/Hdfc.png";
+import {zerointerest} from "../../../src/allimages";
+import {nodocumentbnpl} from "../../../src/allimages";
+import {creditperiod} from "../../../src/allimages";
+import {lazypay} from "../../../src/allimages";
+import {simpl} from "../../../src/allimages";
+import {icicipaylater} from "../../../src/allimages";
+import {olamoney} from "../../../src/allimages";
+import {hdfc} from "../../../src/allimages";
 
 const BookNowPaylaterWidget = () => {
   return (

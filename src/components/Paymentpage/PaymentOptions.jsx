@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./paymentoptions.css";
-import gpaylogo from "../../../public/assets/images/Gpaylogo.png";
+import {gpaylogo} from "../../../src/allimages";
 import CardWidget from "./CardWidget";
 import GpayWidget from "./GpayWidget";
 import EmiWidget from "./EmiWidget";

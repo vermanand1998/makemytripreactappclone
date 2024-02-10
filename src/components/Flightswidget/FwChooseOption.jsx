@@ -1,11 +1,11 @@
 import React from "react";
 import "./fwchooseoption.css";
-import wheretogo from "../../../public/assets/images/wheretogo.png";
-import insurance from "../../../public/assets/images/insurance.png";
-import exploreif from "../../../public/assets/images/exploreif.png";
-import mice from "../../../public/assets/images/mice.png";
-import giftcard from "../../../public/assets/images/giftcard.png";
-import fwad from "../../../public/assets/images/fwad.png";
+import {wheretogo} from "../../../src/allimages";
+import {insurance} from "../../../src/allimages";
+import {exploreif} from "../../../src/allimages";
+import {mice} from "../../../src/allimages";
+import {giftcard} from "../../../src/allimages";
+import {fwad} from "../../../src/allimages";
 import { Link } from "react-router-dom";
 
 const FwChooseOption = () => {

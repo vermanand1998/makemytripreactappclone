@@ -1,8 +1,8 @@
 import React from "react";
 import "./downloadapp.css";
 import { Container } from "@mui/material";
-import indianflag from "../../../public/assets/images/indianflag.png";
-import qrcode from "../../../public/assets/images/qrcode.png";
+import {indianflag} from "../../../src/allimages";
+import {qrcode} from "../../../src/allimages";
 import { Link } from "react-router-dom";
 
 const DownloadApp = () => {
