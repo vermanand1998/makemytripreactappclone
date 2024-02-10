@@ -3,7 +3,7 @@ import React, { useState } from "react";
 
 import "./trainsearchpage.css";
 import OutsideClickHandler from "react-outside-click-handler";
-import Traintopdropdown from "./traintopdropdown";
+import Traintopdropdown from "./Traintopdropdown.jsx";
 
 const TrainStation = ({ handleSearchData, field, trainData, setTrainData }) => {
   const [showDropdown, setShowDropdown] = useState(false);
