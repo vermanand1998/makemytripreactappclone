@@ -52,63 +52,63 @@
   width: inherit;
 }
 .sh-flightsimg {
-  background-image: url("../../../public/assets/Images/headerimages.png");
+  background-image: url("../../assets/Images/headerimages.png");
   background-position: -3px -26.5px;
   height: 20px;
   width: 25px;
   background-size: 156px 240px;
 }
 .sh-hotelimg {
-  background-image: url("../../../public/assets/Images/headerimages.png");
+  background-image: url("../../assets/Images/headerimages.png");
   background-position: -36.5px 0;
   height: 24px;
   width: 21.5px;
   background-size: 156px 240px;
 }
 .sh-homestaysimg {
-  background-image: url("../../../public/assets/Images/headerimages.png");
+  background-image: url("../../assets/Images/headerimages.png");
   background-position: -34px -50px;
   height: 22px;
   width: 26.4px;
   background-size: 156px 240px;
 }
 .sh-holidayimg {
-  background-image: url("../../../public/assets/Images/headerimages.png");
+  background-image: url("../../assets/Images/headerimages.png");
   background-position: -65px -2.2px;
   height: 20px;
   width: 25px;
   background-size: 156px 240px;
 }
 .sh-trainimg {
-  background-image: url("../../../public/assets/Images/headerimages.png");
+  background-image: url("../../assets/Images/headerimages.png");
   background-position: -94px -1.8px;
   height: 22px;
   width: 28px;
   background-size: 156px 240px;
 }
 .sh-busesimg {
-  background-image: url("../../../public/assets/Images/headerimages.png");
+  background-image: url("../../assets/Images/headerimages.png");
   background-position: -126px -1.2px;
   height: 21.6px;
   width: 25.8px;
   background-size: 156px 240px;
 }
 .sh-cabsimg {
-  background-image: url("../../../public/assets/Images/headerimages.png");
+  background-image: url("../../assets/Images/headerimages.png");
   background-position: -66px -49px;
   height: 22.2px;
   width: 23.4px;
   background-size: 156px 240px;
 }
 .sh-foreximg {
-  background-image: url("../../../public/assets/Images/headerimages.png");
+  background-image: url("../../assets/Images/headerimages.png");
   background-position: -100px -50px;
   height: 20px;
   width: 18px;
   background-size: 156px 240px;
 }
 .sh-travelinsuranceimg {
-  background-image: url("../../../public/assets/Images/headerimages.png");
+  background-image: url("../../assets/Images/headerimages.png");
   background-position: -126px -46.7px;
   height: 29px;
   width: 25px;
@@ -134,7 +134,7 @@
   width: 25px;
 }
 .sh-loginlogowhite {
-  background-image: url("../../../public/assets/Images/headerimages.png");
+  background-image: url("../../assets/Images/headerimages.png");
   background-color: transparent;
   background-position: -177px -350px;
   background-size: 260px 400px;
@@ -162,7 +162,7 @@
   gap: 5px;
 }
 .sh-flag {
-  background-image: url("../../../public/assets/Images/flag.png");
+  background-image: url("../../assets/Images/flag.png");
   background-position: 0 0;
   height: 12px;
   width: 15px;

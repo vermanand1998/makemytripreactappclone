@@ -41,7 +41,7 @@
   margin-bottom: 10px;
 }
 .icc-img {
-  background-image: url("../../../public/assets/images/paymentsprite.png");
+  background-image: url("../../assets/Images/paymentsprite.png");
   background-position: -27px -62px;
   height: 16px;
   width: 20px;
@@ -64,7 +64,7 @@
   height: 24px;
 }
 .mmtgc-img {
-  background-image: url("../../../public/assets/images/paymentsprite.png");
+  background-image: url("../../assets/Images/paymentsprite.png");
   background-size: 242px 326px;
   margin-bottom: 10px;
   background-position: -54px -88px;

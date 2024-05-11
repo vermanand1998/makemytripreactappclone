@@ -1,0 +1,47 @@
+.header {
+  height: 50px; /* Adjusted height */
+  width: auto;
+  background-color: rgb(49, 113, 209);
+}
+.footer {
+  height: 50px; /* Adjusted height */
+  width: auto;
+  background-color: rgb(15, 43, 200);
+}
+.boxes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.upper {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  text-align: center;
+}
+.lower {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.one {
+  height: 80px;
+  width: 70px;
+  grid-column: 2; /* Positioned in the middle */
+  background-color: aquamarine;
+}
+.two {
+  height: 80px;
+  width: 70px;
+  grid-column: 3; /* Positioned on the right */
+  background-color: purple;
+}
+.three {
+  height: 80px;
+  width: 70px;
+  grid-column: 1 / span 2; /* Positioned to span the first two columns */
+  background-color: orange;
+}

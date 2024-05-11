@@ -12,24 +12,18 @@ const HotelDropdown = ({ setShowCity, selectedCity, updateSelecetedCity }) => {
   useEffect(() => {
     get("/bookingportals/hotel");
   }, []);
-  // console.log("hotel", data);
+
   const handleCitySelect = (hotel) => {
     updateSelecetedCity(hotel);
     setShowCity(false);
   };
   useEffect(() => {
-    const timeoutId = setTimeout(() => {
-      console.log(data?.data?.hotels);
-      const filteredData = !data?.data?.hotels
-        ? []
-        : data?.data?.hotels?.filter((hotel) =>
-            hotel.location.toLowerCase().includes(searchValue.toLowerCase())
-          );
-      setFilterData(filteredData);
-    }, 200);
-    return () => {
-      clearTimeout(timeoutId);
-    };
+    const filteredData = !data?.data?.hotels
+      ? []
+      : data?.data?.hotels?.filter((hotel) =>
+          hotel.location.toLowerCase().includes(searchValue.toLowerCase())
+        );
+    setFilterData(filteredData);
   }, [searchValue, data]);
 
   return (

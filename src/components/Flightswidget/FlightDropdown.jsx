@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./flightdropdown.css";
 import { IoSearch } from "react-icons/io5";
-import {flightsearch} from "../../../src/allimages";
+import flightsearch from "../../assets/Images/flightsearch.png";
 import useFetch from "../../Hooks/useFetch";
 
 const FlightDropdown = ({ setShowDropdown, updateSelectedAirport }) => {
@@ -20,18 +20,12 @@ const FlightDropdown = ({ setShowDropdown, updateSelectedAirport }) => {
   };
 
   useEffect(() => {
-    // const timeoutId = setTimeout(() => {
-    console.log(data?.data?.airports);
     const filteredData = !data?.data?.airports
       ? []
       : data?.data?.airports?.filter((airport) =>
           airport.city.toLowerCase().includes(searchValue.toLowerCase())
         );
     setFilterData(filteredData);
-    // }, 200);
-    // return () => {
-    //   clearTimeout(timeoutId);
-    // };
   }, [searchValue, data]);
 
   return (

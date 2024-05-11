@@ -6,9 +6,8 @@
   background-color: #f2f2f2;
 }
 .fw-adv {
-  height: 88px;
-  width: 968px;
+  width: 60rem;
   border-radius: 16px;
-  margin: 4rem 6rem 35px 6rem;
+  margin: 5rem 6rem 2.5rem 6rem;
   cursor: pointer;
 }

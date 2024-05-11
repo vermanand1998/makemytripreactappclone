@@ -14,7 +14,7 @@
   align-items: flex-start;
 }
 .gpayicondiv {
-  background-image: url("../../../public/assets/images/paymentsprite.png");
+  background-image: url("../../assets/Images/paymentsprite.png");
   margin-bottom: 15px;
   background-position: -190px -36px;
   height: 19px;

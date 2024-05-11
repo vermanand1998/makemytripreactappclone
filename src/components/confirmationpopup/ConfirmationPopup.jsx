@@ -4,14 +4,8 @@ import { IoCheckmarkCircleOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
 const ConfirmationPopup = ({ setShowConfirmation }) => {
-  const handleConfirmClose = (e) => {
-    e.stopPropagation();
-    if (e.target === e.currentTarget) {
-      setShowConfirmation(false);
-    }
-  };
   return (
-    <div className="bg-blur" onClick={handleConfirmClose}>
+    <div className="bg-blur">
       <div className="confirmation-popup-maindiv">
         <IoCheckmarkCircleOutline size={60} color="rgb(1, 150, 1)" />
         <h2 className="success-msg">Payment Success!!!</h2>

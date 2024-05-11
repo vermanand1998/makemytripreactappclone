@@ -31,6 +31,7 @@ const Flighttopsection = ({ updateSearchParams }) => {
   const date = decodeURI(params.get("date"));
   const source = params.get("source");
   const destination = params.get("destination");
+
   useEffect(() => {
     getDropdownData("/bookingportals/airport?limit=30");
   }, []);
@@ -52,11 +53,6 @@ const Flighttopsection = ({ updateSearchParams }) => {
   const handleDepartureDate = (date) => {
     setSelectedDate(date);
     setShowDate(false);
-    document.getElementById("fs-datepicker").innerText = new Date(date)
-      .toString()
-      .split(" ")
-      .slice(0, 4)
-      .join(" ");
   };
   const handleSearchData = (key, value) => {
     setSearchData((prev) => ({

@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import "./stickyheader.css";
-import {logoblue} from "../../../src/allimages";
+// import logoblue from "../../assets/Images/LogoBlue.png";
+import logoblue from "../../assets/Images/logoblue.png";
 import { BsChevronDown } from "react-icons/bs";
 import TabforLogin from "../Login/TabforLogin";
 import { Link, useNavigate } from "react-router-dom";
@@ -38,6 +39,12 @@ export const Stickyheader = () => {
       theme: "light",
     });
   };
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
 
   return (
     <div className="stickyheaderpage">
@@ -49,7 +56,7 @@ export const Stickyheader = () => {
         </Link>
         <Link to="/" className="sticky-linktohome">
           <div className="stickynavlinks">
-            <ul className="navlinkslist">
+            <ul className="navlinkslist" onClick={scrollToTop}>
               <li>
                 <div className="sh-flightsimg"></div>
                 <div>Flights</div>

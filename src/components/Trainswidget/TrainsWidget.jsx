@@ -20,8 +20,8 @@ const TrainsWidget = () => {
   const [trainClass, setTrainClass] = useState("All Class");
   const [shortClass, setShortClass] = useState("ALL");
   const [showTrainPopup, setShowTrainPopup] = useState(false);
-  const [showTravelDate, setShowTravelDate] = useState(false);
-  const [selectedTravelDate, setSelectedTravelDate] = useState(null);
+  const [showTravelDate, setShowTravelDate] = useState(null);
+  const [selectedTravelDate, setSelectedTravelDate] = useState(new Date());
   const [fromTrainData, setFromTrainData] = useState({
     JunctionName: "Delhi Junction",
   });
@@ -68,39 +68,15 @@ const TrainsWidget = () => {
   const handleTravelIconClick = () => {
     setShowTravelDate(!showTravelDate);
   };
-  const updateDateDivValues = (date) => {
-    const tday = date.getDate();
-    const tmonth = date.toLocaleString("default", { month: "short" });
-    const tyear = date.getFullYear().toString().slice(-2);
-    const tdayName = date.toLocaleDateString("default", { weekday: "long" });
 
-    document.getElementById("tday").innerText = tday;
-    document.getElementById("tmonth").innerText = tmonth;
-    document.getElementById("tyear").innerText = tyear;
-    document.getElementById("tdayName").innerText = tdayName;
-  };
-
-  useEffect(() => {
-    updateDateDivValues(new Date());
-  }, []);
   const handleTravelDate = (date) => {
-    updateDateDivValues(date);
     setSelectedTravelDate(date);
     setShowTravelDate(false);
-    const tday = date.getDate();
-    const tmonth = date.toLocaleString("default", { month: "short" });
-    const tyear = date.getFullYear().toString().slice(-2);
-    const tdayName = date.toLocaleDateString("default", { weekday: "long" });
-    document.getElementById("tday").innerText = tday;
-    document.getElementById("tmonth").innerText = tmonth;
-    document.getElementById("tyear").innerText = tyear;
-    document.getElementById("tdayName").innerText = tdayName;
-
     handleSearchData(
       "day",
       date.toLocaleDateString("default", { weekday: "short" })
     );
-    handleSearchData("date", date);
+    handleSearchData("date", date.toLocaleDateString());
   };
   return (
     <>
@@ -134,25 +110,37 @@ const TrainsWidget = () => {
                 <p>Travel Date</p>
                 <MdKeyboardArrowDown size={20} color="#008CFF" />
               </div>
-              {showTravelDate && (
-                <OutsideClickHandler
-                  onOutsideClick={() => setShowTravelDate(false)}
-                >
+              <p>
+                <span>{selectedTravelDate.getDate()}</span>
+                <span>
+                  {selectedTravelDate.toLocaleString("default", {
+                    month: "short",
+                  })}
+                </span>
+                <span>
+                  {selectedTravelDate.getFullYear().toString().slice(-2)}
+                </span>
+              </p>
+              <p>
+                {selectedTravelDate.toLocaleDateString("default", {
+                  weekday: "long",
+                })}
+              </p>
+            </div>
+            {showTravelDate && (
+              <OutsideClickHandler
+                onOutsideClick={() => setShowTravelDate(false)}
+              >
+                <div className="datepicker-train">
                   <DatePicker
                     selected={selectedTravelDate}
                     onChange={handleTravelDate}
                     inline
                     minDate={new Date()}
                   />
-                </OutsideClickHandler>
-              )}
-              <p>
-                <span id="tday"></span>
-                <span id="tmonth"></span>
-                <span id="tyear"></span>
-              </p>
-              <p id="tdayName"></p>
-            </div>
+                </div>
+              </OutsideClickHandler>
+            )}
             <div className="tw-class" onClick={handlePopupClick}>
               <p>
                 class

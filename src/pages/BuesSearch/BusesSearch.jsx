@@ -13,7 +13,6 @@ const BusesSearch = () => {
   const day = params.get("day");
   const type = params.get("type");
   const sort = params.get("sort");
-
   const departureTime = params.get("departureTime");
   const arrivalTime = params.get("arrivalTime");
   const { get, data } = useFetch([]);
@@ -25,7 +24,6 @@ const BusesSearch = () => {
       setParams(params);
       return;
     }
-
     const newSearchParams = { ...Object.fromEntries(params), [key]: value };
     setParams(newSearchParams);
   };

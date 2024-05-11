@@ -89,7 +89,7 @@
   font-weight: 900;
 }
 .upcomingtripimg {
-  background-image: url("../../../public/assets/images/mytripSprite.png");
+  background-image: url("../../assets/Images/mytripSprite.png");
   width: 27px;
   height: 27px;
   background-position: -1px -28px;
@@ -97,7 +97,7 @@
   background-size: 700px 750px;
 }
 .completedtripimg {
-  background-image: url("../../../public/assets/images/mytripSprite.png");
+  background-image: url("../../assets/Images/mytripSprite.png");
   width: 27px;
   height: 27px;
   margin-right: 10px;

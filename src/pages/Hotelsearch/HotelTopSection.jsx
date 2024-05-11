@@ -12,21 +12,22 @@ import "react-datepicker/dist/react-datepicker.css";
 const HotelTopSection = ({ updateSearchParams }) => {
   const [searchData, setSearchData] = useState({
     location: "Pune",
-    checkindate: new Date().toLocaleDateString(),
-    checkoutdate: new Date().toLocaleDateString(),
+    date: new Date().toLocaleDateString(),
+    nextDate: new Date().toLocaleDateString(),
   });
   const [selectedCity, setSelectedCity] = useState({
     location: "Pune",
   });
   const [showCheckinDate, setShowCheckinDate] = useState(false);
-  const [selectedCheckinDate, setSelectedCheckinDate] = useState(null);
+  const [selectedCheckinDate, setSelectedCheckinDate] = useState(new Date());
   const [showCheckoutDate, setShowCheckoutDate] = useState(false);
-  const [selectedCheckoutDate, setSelectedCheckoutDate] = useState(null);
+  const [selectedCheckoutDate, setSelectedCheckoutDate] = useState(new Date());
   const [showCity, setShowCity] = useState(false);
+
   const { data: dropDownData, get: getDropdownData } = useFetch([]);
   const [params] = useSearchParams();
-  const checkindate = decodeURI(params.get("checkindate"));
-  const checkoutdate = decodeURI(params.get("checkoutdate"));
+  const date = decodeURI(params.get("date"));
+  const nextDate = decodeURI(params.get("nextDate"));
   const location = params.get("location");
 
   const updateSelecetedCity = (city) => {
@@ -37,6 +38,7 @@ const HotelTopSection = ({ updateSearchParams }) => {
   useEffect(() => {
     getDropdownData("/bookingportals/hotel");
   }, []);
+
   useEffect(() => {
     if (!dropDownData || !dropDownData.data || !dropDownData.data.hotels)
       return;
@@ -70,30 +72,14 @@ const HotelTopSection = ({ updateSearchParams }) => {
     setShowCheckoutDate(!showCheckoutDate);
   };
 
-  const handleCheckinDate = (checkindate) => {
-    setSelectedCheckinDate(checkindate);
+  const handleCheckinDate = (date) => {
+    setSelectedCheckinDate(date);
     setShowCheckinDate(false);
-
-    document.getElementById("hs-checkindatepicker").innerText = new Date(
-      checkindate
-    )
-      .toString()
-      .split(" ")
-      .slice(0, 4)
-      .join(" ");
   };
 
-  const handleCheckoutDate = (checkoutdate) => {
-    setSelectedCheckoutDate(checkoutdate);
+  const handleCheckoutDate = (nextDate) => {
+    setSelectedCheckoutDate(nextDate);
     setShowCheckoutDate(false);
-
-    document.getElementById("hs-checkoutdatepicker").innerText = new Date(
-      checkoutdate
-    )
-      .toString()
-      .split(" ")
-      .slice(0, 4)
-      .join(" ");
   };
 
   return (
@@ -112,7 +98,7 @@ const HotelTopSection = ({ updateSearchParams }) => {
             CHECK-IN <MdKeyboardArrowDown size={20} />
           </p>
           <p className="selecteditem" id="hs-checkindatepicker">
-            {new Date(checkindate).toString().split(" ").slice(0, 4).join(" ")}
+            {new Date(date).toString().split(" ").slice(0, 4).join(" ")}
           </p>
         </div>
         <div onClick={handleCheckoutDateClick}>
@@ -120,7 +106,7 @@ const HotelTopSection = ({ updateSearchParams }) => {
             CHECK-OUT <MdKeyboardArrowDown size={20} />
           </p>
           <p className="selecteditem" id="hs-checkoutdatepicker">
-            {new Date(checkoutdate).toString().split(" ").slice(0, 4).join(" ")}
+            {new Date(nextDate).toString().split(" ").slice(0, 4).join(" ")}
           </p>
         </div>
 

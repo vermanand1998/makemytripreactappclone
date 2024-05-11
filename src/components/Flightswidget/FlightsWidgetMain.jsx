@@ -21,11 +21,12 @@ const FlightsWidgetMain = () => {
     date: new Date().toLocaleDateString(),
   });
   const [travellers, setTravellers] = useState(1);
-
   const [travellerclass, setTravellerClass] = useState("Economy");
   const [showFightPopup, setShowFlightPopup] = useState(false);
   const [showDepartureDate, setShowDepartureDate] = useState(false);
-  const [selectedDepartureDate, setSelectedDepartureDate] = useState(null);
+  const [selectedDepartureDate, setSelectedDepartureDate] = useState(
+    new Date()
+  );
   const [fromAirportData, setFromAirportData] = useState({
     city: "Pune",
     iata_code: "PNQ",
@@ -72,46 +73,23 @@ const FlightsWidgetMain = () => {
       [key]: value,
     }));
   };
+
   const handlePopupClick = () => {
     setShowFlightPopup(!showFightPopup);
   };
 
-  const handleDepartureIconClick = (e) => {
+  const handleDepartureIconClick = () => {
     setShowDepartureDate(!showDepartureDate);
   };
-  const updateDateDivValues = (date) => {
-    const dday = date.getDate();
-    const dmonth = date.toLocaleString("default", { month: "short" });
-    const dyear = date.getFullYear().toString().slice(-2);
-    const ddayName = date.toLocaleDateString("default", { weekday: "long" });
-    document.getElementById("dday").innerText = dday;
-    document.getElementById("dmonth").innerText = dmonth;
-    document.getElementById("dyear").innerText = dyear;
-    document.getElementById("ddayName").innerText = ddayName;
-  };
-
-  useEffect(() => {
-    updateDateDivValues(new Date());
-  }, []);
 
   const handleDepartureDate = (date) => {
-    updateDateDivValues(date);
     setSelectedDepartureDate(date);
     setShowDepartureDate(false);
-    const dday = date.getDate();
-    const dmonth = date.toLocaleString("default", { month: "short" });
-    const dyear = date.getFullYear().toString().slice(-2);
-    const ddayName = date.toLocaleDateString("default", { weekday: "long" });
-    document.getElementById("dday").innerText = dday;
-    document.getElementById("dmonth").innerText = dmonth;
-    document.getElementById("dyear").innerText = dyear;
-    document.getElementById("ddayName").innerText = ddayName;
-
     handleSearchData(
       "day",
       date.toLocaleDateString("default", { weekday: "short" })
     );
-    handleSearchData("date", date);
+    handleSearchData("date", date.toLocaleDateString());
   };
 
   return (
@@ -148,24 +126,36 @@ const FlightsWidgetMain = () => {
                 <MdKeyboardArrowDown size={20} color="#008cff" />
               </div>
               <p>
-                <span id="dday"></span>
-                <span id="dmonth"></span>
-                <span id="dyear"></span>
+                <span>{selectedDepartureDate.getDate()}</span>
+                <span>
+                  {selectedDepartureDate.toLocaleString("default", {
+                    month: "short",
+                  })}
+                </span>
+                <span>
+                  {selectedDepartureDate.getFullYear().toString().slice(-2)}
+                </span>
               </p>
-              <p id="ddayName"></p>
-              {showDepartureDate && (
-                <OutsideClickHandler
-                  onOutsideClick={() => setShowDepartureDate(false)}
-                >
+              <p>
+                {selectedDepartureDate.toLocaleDateString("default", {
+                  weekday: "long",
+                })}
+              </p>
+            </div>
+            {showDepartureDate && (
+              <OutsideClickHandler
+                onOutsideClick={() => setShowDepartureDate(false)}
+              >
+                <div className="datepicker-flight">
                   <DatePicker
                     selected={selectedDepartureDate}
                     onChange={handleDepartureDate}
                     inline
                     minDate={new Date()}
                   />
-                </OutsideClickHandler>
-              )}
-            </div>
+                </div>
+              </OutsideClickHandler>
+            )}
 
             <div className="fw-travellersclassdiv" onClick={handlePopupClick}>
               <p className="flex">

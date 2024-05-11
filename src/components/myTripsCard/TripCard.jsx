@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./mytrip.css";
 import { RiBookmarkFill } from "react-icons/ri";
+import useFetch from "../../Hooks/useFetch";
 
 const TripCard = () => {
-  const paymentCart = JSON.parse(localStorage.getItem("paymentStatus"));
-  // console.log(paymentCart);
+  const { get, data } = useFetch([]);
+
+  useEffect(() => {
+    get("/bookingportals/booking");
+  }, []);
+  console.log(data);
 
   // Function to convert UTC time to Kolkata time
   const convertToKolkataTime = (utcTime) => {
@@ -32,55 +37,58 @@ const TripCard = () => {
 
   return (
     <>
-      <div className="Trip-container">
-        <RiBookmarkFill size={25} className="mt-flight-icon" />
+      <div>
+        {data?.data?.reverse()?.map((card, index) => {
+          return (
+            <div className="Trip-container" key={index}>
+              <RiBookmarkFill size={25} className="mt-flight-icon" />
+              <div className="T-A-D-text">
+                <p>{card.booking_type}</p>
+                <p>Booking Id: {card.user._id}</p>
+              </div>
 
-        <div className="T-A-D-text">
-          <p>
-            {paymentCart?.bookingId?.booking_type ?? "Default Booking Type"}
-          </p>
-          <p>Booking Id: {paymentCart?.bookingId?.user ?? "Default User"}</p>
-        </div>
+              <div className="dates-1">
+                <div className="end-date">
+                  <span>
+                    {card?.booking_type === "hotel"
+                      ? "Checkin Time:"
+                      : "Departure Date:"}
+                  </span>
+                  <span>
+                    {card?.booking_type === "hotel"
+                      ? currentKolkataTime.toLocaleTimeString("en-IN", {
+                          timeZone: "Asia/Kolkata",
+                          hour: "numeric",
+                          minute: "numeric",
+                        })
+                      : formatDate(currentKolkataTime)}
+                    {/* Current departure date */}
+                  </span>
+                </div>
+              </div>
 
-        <div className="dates-1">
-          <div className="end-date">
-            <span>
-              {paymentCart?.bookingId?.booking_type === "hotel"
-                ? "Checkin Time:"
-                : "Departure Date:"}
-            </span>
-            <span>
-              {paymentCart?.bookingId?.booking_type === "hotel"
-                ? currentKolkataTime.toLocaleTimeString("en-IN", {
-                    timeZone: "Asia/Kolkata",
-                    hour: "numeric",
-                    minute: "numeric",
-                  })
-                : formatDate(currentKolkataTime)}{" "}
-              {/* Current departure date */}
-            </span>
-          </div>
-        </div>
-
-        <div className="dates-2">
-          <div className="Start-date">
-            <span>
-              {paymentCart?.bookingId?.booking_type === "hotel"
-                ? "Checkout Time:"
-                : "Arrival Date:"}
-            </span>
-            <span>
-              {paymentCart?.bookingId?.booking_type === "hotel"
-                ? arrivalTime.toLocaleTimeString("en-IN", {
-                    timeZone: "Asia/Kolkata",
-                    hour: "numeric",
-                    minute: "numeric",
-                  })
-                : formatDate(arrivalTime)}{" "}
-              {/* Arrival date (6 hours later) */}
-            </span>
-          </div>
-        </div>
+              <div className="dates-2">
+                <div className="Start-date">
+                  <span>
+                    {card?.booking_type === "hotel"
+                      ? "Checkout Time:"
+                      : "Arrival Date:"}
+                  </span>
+                  <span>
+                    {card?.booking_type === "hotel"
+                      ? arrivalTime.toLocaleTimeString("en-IN", {
+                          timeZone: "Asia/Kolkata",
+                          hour: "numeric",
+                          minute: "numeric",
+                        })
+                      : formatDate(arrivalTime)}{" "}
+                    {/* Arrival date (6 hours later) */}
+                  </span>
+                </div>
+              </div>
+            </div>
+          );
+        })}
       </div>
     </>
   );

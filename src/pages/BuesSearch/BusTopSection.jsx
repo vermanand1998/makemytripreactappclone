@@ -60,12 +60,6 @@ const BusTopSection = ({ updateSearchParams }) => {
   const handleDepartureDate = (date) => {
     setSelectedDate(date);
     setShowDate(false);
-
-    document.getElementById("bs-datepicker").innerText = new Date(date)
-      .toString()
-      .split(" ")
-      .slice(0, 4)
-      .join(" ");
   };
 
   const handleBusSearchButtonClick = () => {

@@ -18,12 +18,10 @@ const AuthContextProvider = ({ children }) => {
     setAuthData((prev) => ({
       ...prev,
       token,
-      user: userData,
       authenticated: true,
     }));
     console.log("context", signUser);
     localStorage.setItem("prime_token", token);
-    localStorage.setItem("prime_user", JSON.stringify(userData));
   };
 
   const logoutUser = () => {
@@ -35,26 +33,13 @@ const AuthContextProvider = ({ children }) => {
   const isUserLoggedIn = () => {
     const token = localStorage.getItem("prime_token");
     if (token) {
-      const user = JSON.parse(localStorage.getItem("prime_user"));
       setAuthData((prev) => ({
         ...prev,
         token,
-        user,
         authenticated: true,
       }));
     }
   };
-
-  // const setUser = ({ data }) => {
-  //   console.log(data, "here");
-  //   localStorage.setItem("prime_user", JSON.stringify(data));
-  //   // const user = JSON.parse(localStorage.getItem("prime_user"));
-  //   setAuthData((prev) => ({
-  //     ...prev,
-  //     user: data,
-  //   }));
-  //   console.log("context", "setUser");
-  // };
 
   return (
     <authContext.Provider

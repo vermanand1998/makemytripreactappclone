@@ -10,7 +10,7 @@ const BusSeatPicker = ({ id }) => {
   const [params] = useSearchParams();
   const date = decodeURI(params.get("date"));
   const { data, get } = useFetch([]);
-  const [selectedSeats, setSelectedSeats] = useState(0);
+  const [selectedSeats, setSelectedSeats] = useState(1);
   const { authenticated } = useAuthContext();
   const { showLogin, setShowLogin } = useContext(LoginContext);
 
@@ -43,10 +43,10 @@ const BusSeatPicker = ({ id }) => {
           ></span>
         </div>
 
-        <div onClick={() => selectSeat(0, i)}>
+        <div onClick={() => selectSeat(0, i + 13)}>
           <span
             className={
-              seats[0][i]
+              seats[0][i + 13]
                 ? "seat-icon-bus seat-icon-bus-selected"
                 : "seat-icon-bus"
             }
@@ -54,19 +54,19 @@ const BusSeatPicker = ({ id }) => {
         </div>
       </div>
       <div>
-        <div onClick={() => selectSeat(i, 1)}>
+        <div onClick={() => selectSeat(i, 1 + 26)}>
           <span
             className={
-              seats[i][1]
+              seats[i][1 + 26]
                 ? "seat-icon-bus seat-icon-bus-selected"
                 : "seat-icon-bus"
             }
           ></span>
         </div>
-        <div onClick={() => selectSeat(1, i)}>
+        <div onClick={() => selectSeat(1, i + 39)}>
           <span
             className={
-              seats[1][i]
+              seats[1][i + 39]
                 ? "seat-icon-bus seat-icon-bus-selected"
                 : "seat-icon-bus"
             }

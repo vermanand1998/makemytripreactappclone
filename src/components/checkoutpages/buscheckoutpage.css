@@ -112,7 +112,7 @@
   justify-content: center;
 }
 .ratingstar-img {
-  background: url("../../../public/assets/Images/busListingSprite.png");
+  background: url("../../assets/Images/busListingSprite.png");
   background-size: 350px 500px;
   background-position: -132px -56px;
   width: 9px;

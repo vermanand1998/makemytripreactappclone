@@ -275,6 +275,7 @@
 }
 .fw-exploremore {
   /* border: 2px solid red; */
+  margin: 10px;
   cursor: default;
   color: white;
   display: flex;
@@ -301,7 +302,7 @@
   margin-top: 35px;
 }
 .flightsSprite {
-  background-image: url(../../../public/assets/Images/alllogo.png);
+  background-image: url(../../assets/Images/alllogo.png);
   background-repeat: no-repeat;
   display: inline-block;
   background-size: 200px 650px;
@@ -334,4 +335,9 @@
 .fw-todiv:hover,
 .new-div:hover {
   background-color: #eaf5ff;
+}
+.datepicker-flight {
+  position: absolute;
+  top: 9rem;
+  right: 15rem;
 }

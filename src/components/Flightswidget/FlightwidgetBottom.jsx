@@ -1,6 +1,6 @@
 import React from "react";
 import "./flightbottom.css";
-import {fwad} from "../../../src/allimages";
+import fwad from "../../assets/Images/fwad.png";
 import Offers from "../offers/Offers";
 import RecentSearches from "./RecentSearches";
 import Fguidance from "./Fguidance";
@@ -13,7 +13,7 @@ const FlightwidgetBottom = () => {
     <div>
       <div className="fw-mainbtmdiv">
         <Link to="/comingsoon">
-          <img className="fw-adv" src={fwad} alt="ad" />
+          {/* <img className="fw-adv" src={fwad} alt="ad" /> */}
         </Link>
       </div>
       <Offers />

@@ -85,12 +85,6 @@ const Traintopsection = ({ updateSearchParams }) => {
   const handleDepartureDate = (date) => {
     setSelectedDate(date);
     setShowDate(false);
-
-    document.getElementById("ts-datepicker").innerText = new Date(date)
-      .toString()
-      .split(" ")
-      .slice(0, 4)
-      .join(" ");
   };
   const handleTrainSearchButtonClick = () => {
     updateSearchParams(searchData);

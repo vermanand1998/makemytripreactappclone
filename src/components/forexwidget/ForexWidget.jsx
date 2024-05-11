@@ -1,7 +1,7 @@
 import React from "react";
 import "./forexwidget.css";
 import { Container } from "@mui/material";
-import {travelLoan} from "../../../src/allimages";
+import travelLoan from "../../assets/Images/travelLoan.png";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 

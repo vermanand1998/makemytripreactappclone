@@ -476,14 +476,14 @@
   align-items: center;
 }
 .hs-checkin-datepicker {
-  position: fixed;
-  top: 20vh;
-  left: 21vw;
-  z-index: 1000;
+  position: absolute;
+  top: 15vh;
+  left: 20vw;
+  z-index: 10;
 }
 .hs-checkout-datepicker {
-  position: fixed;
-  top: 20vh;
-  left: 30vw;
-  z-index: 1000;
+  position: absolute;
+  top: 15vh;
+  left: 34vw;
+  z-index: 10;
 }

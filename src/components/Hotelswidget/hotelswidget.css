@@ -204,3 +204,13 @@
 .hw-roomsandguest:hover {
   background-color: #eaf5ff;
 }
+.datepicker-hotelcheckin {
+  position: absolute;
+  top: 9rem;
+  right: 33rem;
+}
+.datepicker-hotelcheckout {
+  position: absolute;
+  top: 9rem;
+  right: 21rem;
+}

@@ -126,7 +126,7 @@
   margin-top: 35px;
 }
 .flightsSprite {
-  background-image: url(../../../public/assets/Images/alllogo.png);
+  background-image: url(../../assets/Images/alllogo.png);
   background-repeat: no-repeat;
   display: inline-block;
   background-size: 200px 650px;
@@ -144,4 +144,9 @@
 }
 .bw-traveldate:hover {
   background-color: #eaf5ff;
+}
+.datepicker-bus {
+  position: absolute;
+  top: 10rem;
+  right: 0.4rem;
 }

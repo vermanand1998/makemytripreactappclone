@@ -8,7 +8,6 @@ const BusCard = ({ data }) => {
 
   const toggleVisibility = (index) => {
     setElementVisibility((prevState) => ({
-      ...prevState,
       [index]: !prevState[index], // Toggle the state of the specific index
     }));
   };

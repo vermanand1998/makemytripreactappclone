@@ -85,7 +85,7 @@
   padding: 0;
 }
 .tw-traveldate {
-  width: 140px;
+  width: 260px;
   padding: 10px 19px;
   border-right: solid 1px #e7e7e7;
   display: flex;
@@ -161,7 +161,7 @@
   margin-top: 38px;
 }
 .flightsSprite {
-  background-image: url(../../../public/assets/Images/alllogo.png);
+  background-image: url(../../assets/Images/alllogo.png);
   background-repeat: no-repeat;
   display: inline-block;
   background-size: 200px 650px;
@@ -182,4 +182,9 @@
 }
 .tw-class:hover {
   background-color: #eaf5ff;
+}
+.datepicker-train {
+  position: absolute;
+  top: 10rem;
+  right: 10rem;
 }

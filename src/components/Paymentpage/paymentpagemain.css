@@ -22,7 +22,7 @@
   gap: 30px;
 }
 .mmt-logo-white {
-  background-image: url("../../../public/assets/images/paymentsprite.png");
+  background-image: url("../../assets/Images/paymentsprite.png");
   background-position: -5px -147px;
   height: 36px;
   width: 113px;
@@ -46,7 +46,7 @@
   align-items: center;
 }
 .safeandsecure-img {
-  background-image: url("../../../public/assets/images/paymentsprite.png");
+  background-image: url("../../assets/Images/paymentsprite.png");
   margin-right: 5px;
   background-position: -86px -62px;
   height: 16px;

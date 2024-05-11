@@ -18,6 +18,7 @@ function validateEmail(email) {
 }
 
 const SignupPage = () => {
+  const { showLogin, setShowLogin } = useContext(LoginContext);
   const [errors, setErrors] = useState(initialData);
   const [formData, setFormData] = useState(initialData);
   const { error: apiError, data, post, loading } = useFetch({});
@@ -61,13 +62,24 @@ const SignupPage = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    // Check for validation errors
     if (
       Object.values(errors).join("") ||
       Object.values(formData).some((val) => val === "")
     ) {
-      console.log(Object.values(errors).join(""));
+      toast.error("Please fill all the required fields.", {
+        position: "top-right",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
       return;
     }
+
     console.log(formData);
     await post("/bookingportals/signup", {
       ...formData,
@@ -109,6 +121,12 @@ const SignupPage = () => {
     }
   }, [apiError, data]);
 
+  useEffect(() => {
+    if (authenticated) {
+      setShowLogin(false);
+    }
+  }, [authenticated]);
+
   return (
     <>
       <form onSubmit={handleSubmit}>
@@ -129,7 +147,7 @@ const SignupPage = () => {
             {errors.name}
           </p>
         )}
-        <label>Email or Mobile Number</label>
+        <label>Email</label>
         <input
           placeholder="Enter your valid email"
           type="email"

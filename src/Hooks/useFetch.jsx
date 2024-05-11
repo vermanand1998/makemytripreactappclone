@@ -29,6 +29,11 @@ const useFetch = (initialData) => {
       setError(null);
       const response = await api.post(url, requestData);
       setData(response);
+      if (response?.data?.message == "Booking successful") {
+        localStorage.setItem("successMsg", "Booking successful");
+      } else {
+        localStorage.setItem("successMsg", "Failed");
+      }
     } catch (error) {
       setError(error);
       console.log("Error fetching data:", error);

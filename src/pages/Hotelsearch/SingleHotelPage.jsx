@@ -1,9 +1,8 @@
 import React, { useContext, useEffect } from "react";
 import "./singlehotel.css";
-// import { MdKeyboardArrowDown } from "react-icons/md";
 import ImageCarousel from "../../pages/Hotelsearch/ImageCarousel";
-// import hotelroomsize from "../../../public/assets/images/image.png";
-import {hotelroombed} from "../../../src/allimages";
+import hotelroomsize from "../../assets/Images/image.png";
+import hotelroombed from "../../assets/Images/hotelroombed.png";
 import { TbMathGreater } from "react-icons/tb";
 import { Link, useParams } from "react-router-dom";
 import useFetch from "../../Hooks/useFetch";
@@ -94,11 +93,11 @@ const SingleHotelPage = () => {
                     <div className="suite-aboutroom">
                       <h2>{room.roomType} Room</h2>
                       <div className="roomsize-div">
-                        {/* <img
+                        <img
                           src={hotelroomsize}
                           alt="room"
                           className="roomsizeimg"
-                        /> */}
+                        />
                         <p>{room.roomSize} sq.ft</p>
                       </div>
                       <div className="roombed-div">
@@ -123,7 +122,7 @@ const SingleHotelPage = () => {
                     <div className="suite-pricediv">
                       <div>
                         <p>Per Night</p>
-                        <p>₹ {room.costPerNight}</p>
+                        {/* <p>₹ {parseFloat(hotel?.avgCostPerNight).toFixed(0)}</p> */}
                         <p>+₹ {room.costDetails.taxesAndFees} taxes & fees</p>
                       </div>
                       <div>

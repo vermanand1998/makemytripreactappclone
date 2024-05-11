@@ -152,7 +152,7 @@
   font-size: 14px;
 }
 .airline-image-indigo {
-  background-image: url("../../../public/assets/Images/indigologo.png");
+  background-image: url("../../assets/Images/indigologo.png");
   background-position: 50%;
   background-size: contain;
   height: 12px;
@@ -161,7 +161,7 @@
   padding: 0;
 }
 .airline-image-vistara {
-  background-image: url("../../../public/assets/Images/vistaralogo.png");
+  background-image: url("../../assets/Images/vistaralogo.png");
   background-position: 50%;
   background-size: contain;
   height: 12px;
@@ -170,7 +170,7 @@
   padding: 0;
 }
 .airline-image-airindia {
-  background-image: url("../../../public/assets/Images/airindialogo.png");
+  background-image: url("../../assets/Images/airindialogo.png");
   background-position: 50%;
   background-size: contain;
   height: 12px;
@@ -243,7 +243,7 @@
   margin-right: 10px;
 }
 .departuretime-img-1 {
-  background-image: url("../../../public/assets/Images/timeimg1.png");
+  background-image: url("../../assets/Images/timeimg1.png");
   margin-bottom: 2px;
   width: 34px;
   height: 34px;
@@ -251,7 +251,7 @@
   background-position: 50%;
 }
 .departuretime-img-2 {
-  background-image: url("../../../public/assets/Images/timeimg2.png");
+  background-image: url("../../assets/Images/timeimg2.png");
   margin-bottom: 2px;
   width: 34px;
   height: 34px;
@@ -259,7 +259,7 @@
   background-position: 50%;
 }
 .departuretime-img-3 {
-  background-image: url("../../../public/assets/Images/timeimg3.png");
+  background-image: url("../../assets/Images/timeimg3.png");
   margin-bottom: 2px;
   width: 34px;
   height: 34px;
@@ -267,7 +267,7 @@
   background-position: 50%;
 }
 .departuretime-img-4 {
-  background-image: url("../../../public/assets/Images/timeimg4.png");
+  background-image: url("../../assets/Images/timeimg4.png");
   margin-bottom: 2px;
   width: 34px;
   height: 34px;
@@ -315,7 +315,7 @@
   margin-right: 10px;
 }
 .arrivaltime-img-1 {
-  background-image: url("../../../public/assets/Images/timeimg1.png");
+  background-image: url("../../assets/Images/timeimg1.png");
   margin-bottom: 2px;
   width: 34px;
   height: 34px;
@@ -323,7 +323,7 @@
   background-position: 50%;
 }
 .arrivaltime-img-2 {
-  background-image: url("../../../public/assets/Images/timeimg2.png");
+  background-image: url("../../assets/Images/timeimg2.png");
   margin-bottom: 2px;
   width: 34px;
   height: 34px;
@@ -331,7 +331,7 @@
   background-position: 50%;
 }
 .arrivaltime-img-3 {
-  background-image: url("../../../public/assets/Images/timeimg3.png");
+  background-image: url("../../assets/Images/timeimg3.png");
   margin-bottom: 2px;
   width: 34px;
   height: 34px;
@@ -339,7 +339,7 @@
   background-position: 50%;
 }
 .arrivaltime-img-4 {
-  background-image: url("../../../public/assets/Images/timeimg4.png");
+  background-image: url("../../assets/Images/timeimg4.png");
   margin-bottom: 2px;
   width: 34px;
   height: 34px;
@@ -369,7 +369,7 @@
   padding: 0;
   margin: 0;
   width: 100%;
-  cursor: not-allowed;
+  cursor: default;
 }
 .airlines-filter-maindiv ul li {
   width: 100%;
@@ -386,8 +386,7 @@
 }
 .airline-checkbox {
   /* border: 2px solid red; */
-  /* cursor: pointer; */
-  cursor: not-allowed;
+  cursor: pointer;
   height: 18px;
   width: 18px;
   margin: 0;
@@ -405,7 +404,7 @@
   font-size: 14px;
 }
 .airindia-logo {
-  background-image: url("../../../public/assets/Images/airinialogo.png");
+  background-image: url("../../assets/Images/airinialogo.png");
   margin-right: 5px;
   background-position: 50%;
   background-size: contain;
@@ -413,7 +412,7 @@
   width: 12px;
 }
 .airindiaexpress-logo {
-  background-image: url("../../../public/assets/Images/airindiaexpresslogo.png");
+  background-image: url("../../assets/Images/airindiaexpresslogo.png");
   margin-right: 5px;
   background-position: 50%;
   background-size: contain;
@@ -421,7 +420,7 @@
   width: 12px;
 }
 .akasaair-logo {
-  background-image: url("../../../public/assets/Images/akasaairlogo.png");
+  background-image: url("../../assets/Images/akasaairlogo.png");
   margin-right: 5px;
   background-position: 50%;
   background-size: contain;
@@ -429,7 +428,7 @@
   width: 12px;
 }
 .allianceair-logo {
-  background-image: url("../../../public/assets/Images/allianceairlogo.png");
+  background-image: url("../../assets/Images/allianceairlogo.png");
   margin-right: 5px;
   background-position: 50%;
   background-size: contain;
@@ -437,7 +436,7 @@
   width: 12px;
 }
 .indigo-logo {
-  background-image: url("../../../public/assets/Images/indigologo.png");
+  background-image: url("../../assets/Images/indigologo.png");
   margin-right: 5px;
   background-position: 50%;
   background-size: contain;
@@ -445,7 +444,7 @@
   width: 12px;
 }
 .spicejet-logo {
-  background-image: url("../../../public/assets/Images/spicejetlogo.png");
+  background-image: url("../../assets/Images/spicejetlogo.png");
   margin-right: 5px;
   background-position: 50%;
   background-size: contain;
@@ -453,7 +452,7 @@
   width: 12px;
 }
 .vistara-logo {
-  background-image: url("../../../public/assets/Images/vistaralogo.png");
+  background-image: url("../../assets/Images/vistaralogo.png");
   margin-right: 5px;
   background-position: 50%;
   background-size: contain;
@@ -465,10 +464,7 @@
   /* border: 1px solid red; */
   width: 880px;
   box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.1);
-  /* width: 880px; */
-  height: 330vh;
-  /* height: auto; */
-  /* z-index: 20; */
+  height: 413vh;
   background-color: #ebf0f5;
   margin: 0 0 0 30px;
 }
@@ -672,8 +668,18 @@
 }
 
 .datepicker {
-  position: fixed;
-  top: 18vh;
-  left: 33vw;
-  z-index: 1000;
+  position: absolute;
+  top: 15vh;
+  left: 30vw;
+  z-index: 10;
+}
+.loader {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loadingImg {
+  width: 200px;
 }

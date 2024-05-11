@@ -450,7 +450,7 @@
 }
 .trainsearch-datepicker {
   position: absolute;
-  top: 18vh;
-  left: 30vw;
-  z-index: 1000;
+  top: 16vh;
+  left: 26vw;
+  z-index: 10;
 }

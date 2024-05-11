@@ -48,16 +48,10 @@ const TrainDropdown = ({ setShowDropdown, updateSelectedTrain }) => {
   };
 
   useEffect(() => {
-    const timeoutId = setTimeout(() => {
-      const filteredData = cities.filter((train) =>
-        train.JunctionName.toLowerCase().includes(searchValue.toLowerCase())
-      );
-      setFilterData(filteredData);
-    }, 200);
-
-    return () => {
-      clearTimeout(timeoutId);
-    };
+    const filteredData = cities.filter((train) =>
+      train.JunctionName.toLowerCase().includes(searchValue.toLowerCase())
+    );
+    setFilterData(filteredData);
   }, [searchValue]);
 
   return (

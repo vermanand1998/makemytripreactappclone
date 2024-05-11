@@ -1,17 +1,20 @@
 import React, { useContext, useEffect, useState } from "react";
-import "./flightsearch.css";
-import "./flightdetails.css";
-import { Link, useNavigate, useSearchParams } from "react-router-dom";
-import {indigoimg} from "../../../src/allimages";
-import {vistaraimg} from "../../../src/allimages";
-import {airindiaimg} from "../../../src/allimages";
-import {spicejetimg} from "../../../src/allimages";
-import {akasaimg} from "../../../src/allimages";
-import {airindiaexpressimg} from "../../../src/allimages";
-import Flightdetails from "./Flightdetails";
+import { Link } from "react-router-dom";
 import { useAuthContext } from "../../Context/AuthContext";
 import LoginContext from "../../Context/LoginContext";
 import TabforLogin from "../../components/Login/TabforLogin";
+import Flightdetails from "./Flightdetails";
+import { Skeleton } from "@mui/material";
+import strip from "../../assets/Images/strip.png";
+import fiticon from "../../assets/Images/fliIcon.png";
+import indigoimg from "../../assets/Images/indigoimg.png";
+import vistaraimg from "../../assets/Images/vistaraimg.png";
+import airindiaimg from "../../assets/Images/airindiaimg.png";
+import spicejetimg from "../../assets/Images/spicejetimg.png";
+import akasaimg from "../../assets/Images/akasaimg.png";
+import airindiaexpressimg from "../../assets/Images/airindiaexpressimg.png";
+import "./flightsearch.css";
+import "./flightdetails.css";
 
 const images = [
   { airline: indigoimg, flightname: "IndiGo" },
@@ -22,11 +25,10 @@ const images = [
   { airline: airindiaexpressimg, flightname: " Air India Express " },
 ];
 
-const Flightcard = ({ data }) => {
+const Flightcard = ({ data, loading }) => {
   const [isElementVisible, setElementVisibility] = useState({});
   const { authenticated } = useAuthContext();
   const { showLogin, setShowLogin } = useContext(LoginContext);
-  const navigate = useNavigate();
 
   const toggleVisibility = (index) => {
     setElementVisibility((prevState) => ({
@@ -37,8 +39,13 @@ const Flightcard = ({ data }) => {
 
   return (
     <>
-      <div className="flightsearch-btmrightdiv">
-        {data?.data?.flights.map((flight, index) => (
+      {loading ? (
+        <div className="loader">
+          <img src={strip} alt="strip" />
+          <img className="loadingImg" src={fiticon} alt="fiticon" />
+        </div>
+      ) : data?.data?.flights.length > 0 ? (
+        data?.data?.flights.map((flight, index) => (
           <div key={index} className="flightdetails-maindiv">
             <div className="available-flightdetails">
               <div className="flight-details-div">
@@ -115,8 +122,13 @@ const Flightcard = ({ data }) => {
               </div>
             )}
           </div>
-        ))}
-      </div>
+        ))
+      ) : (
+        <p className="flex justify-center items-center my-16 text-2xl font-bold">
+          No Result Found.
+        </p>
+      )}
+
       {showLogin && <TabforLogin />}
     </>
   );

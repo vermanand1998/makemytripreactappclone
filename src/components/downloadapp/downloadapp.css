@@ -25,7 +25,7 @@
 }
 .appdwnldiconimg {
   /* border: 1px solid blue; */
-  background-image: url("../../../public/assets/Images/appdetails.png");
+  background-image: url("../../assets/Images/appdetails.png");
   width: 92px;
   height: 96px;
   transform: scale(0.6);
@@ -113,7 +113,7 @@
   flex-direction: column;
 }
 .getfromplaystore {
-  background-image: url("../../../public/assets/Images/appdetails.png");
+  background-image: url("../../assets/Images/appdetails.png");
   width: 149px;
   height: 44px;
   background-position: -3px -55px;
@@ -121,7 +121,7 @@
   background-size: 250px 250px;
 }
 .getfromapplestore {
-  background-image: url("../../../public/assets/Images/appdetails.png");
+  background-image: url("../../assets/Images/appdetails.png");
   width: 149px;
   height: 44px;
   background-position: -3px -6px;

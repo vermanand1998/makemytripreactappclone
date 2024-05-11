@@ -20,8 +20,7 @@ const FlightSearchpage = () => {
   const stops = params.get("stops");
   const sort = params.get("sort");
   const departureTime = params.get("departureTime");
-  const { get, data } = useFetch([]);
-  // const [stops, setSelectedOption] = useState(null);
+  const { loading, get, data } = useFetch([]);
 
   const handleCheckboxChange = (key, value) => {
     // setSelectedOption(value === selectedOption ? null : value);
@@ -30,6 +29,7 @@ const FlightSearchpage = () => {
       setParams(params);
       return;
     }
+    console.log("filterdata", data);
 
     const newSearchParams = { ...Object.fromEntries(params), [key]: value };
     setParams(newSearchParams);
@@ -57,6 +57,17 @@ const FlightSearchpage = () => {
     });
   };
 
+  // const handleCheckbox = () => {
+  //   console.log(data);
+  //   var arr = [];
+  //   for (let i = 0; i <= data.data.flights.length; i++) {
+  //     if (i === 0 || i % 6 === 0) {
+  //       arr[i] = data.data.flights[i];
+  //     }
+  //   }
+  //   console.log(arr);
+  //   data.data.flights = arr;
+  // };
   return (
     <>
       <Stickyheader />
@@ -189,9 +200,7 @@ const FlightSearchpage = () => {
                 </ul>
               </div>
               <div className="popularfilters-div">
-                <p className="popularfilters-head">
-                  Departure from {fromAirportData?.city}
-                </p>
+                <p className="popularfilters-head">Departure Time</p>
                 <ul>
                   <li>
                     <div>
@@ -233,42 +242,45 @@ const FlightSearchpage = () => {
                 <ul>
                   <li>
                     <div>
-                      <input type="checkbox" className="airline-checkbox" />
+                      {/* <input
+                        type="checkbox"
+                        className="airline-checkbox"
+                      /> */}
                       <div className="airindia-logo"></div>
                       <p>Air India</p>
                     </div>
                   </li>
                   <li>
                     <div>
-                      <input type="checkbox" className="airline-checkbox" />
+                      {/* <input type="checkbox" className="airline-checkbox" /> */}
                       <div className="airindiaexpress-logo"></div>
                       <p>Air India Express</p>
                     </div>
                   </li>
                   <li>
                     <div>
-                      <input type="checkbox" className="airline-checkbox" />
+                      {/* <input type="checkbox" className="airline-checkbox" /> */}
                       <div className="akasaair-logo"></div>
                       <p>Akasa Air</p>
                     </div>
                   </li>
                   <li>
                     <div>
-                      <input type="checkbox" className="airline-checkbox" />
+                      {/* <input type="checkbox" className="airline-checkbox" /> */}
                       <div className="indigo-logo"></div>
                       <p>IndiGo</p>
                     </div>
                   </li>
                   <li>
                     <div>
-                      <input type="checkbox" className="airline-checkbox" />
+                      {/* <input type="checkbox" className="airline-checkbox" /> */}
                       <div className="spicejet-logo"></div>
                       <p>SpiceJet</p>
                     </div>
                   </li>
                   <li>
                     <div>
-                      <input type="checkbox" className="airline-checkbox" />
+                      {/* <input type="checkbox" className="airline-checkbox" /> */}
                       <div className="vistara-logo"></div>
                       <p>Vistara</p>
                     </div>
@@ -276,7 +288,9 @@ const FlightSearchpage = () => {
                 </ul>
               </div>
             </div>
-            <Flightcard data={data} />
+            <div className="flightsearch-btmrightdiv">
+              {<Flightcard data={data} loading={loading} />}
+            </div>
           </div>
         </div>
       </div>

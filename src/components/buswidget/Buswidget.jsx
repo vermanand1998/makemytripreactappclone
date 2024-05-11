@@ -17,7 +17,7 @@ const Buswidget = () => {
     date: new Date().toLocaleDateString(),
   });
   const [showDate, setShowDate] = useState(false);
-  const [selectedDate, setSelectedDate] = useState(null);
+  const [selectedDate, setSelectedDate] = useState(new Date());
   const [fromBusData, setFromBusData] = useState({
     location: "Mumbai, Maharashtra",
   });
@@ -60,41 +60,15 @@ const Buswidget = () => {
   const handleTravelDateonClick = () => {
     setShowDate(!showDate);
   };
-  const updateDateDivValues = (date) => {
-    const tday = date.getDate();
-    const tmonth = date.toLocaleString("default", { month: "short" });
-    const tyear = date.getFullYear().toString().slice(-2);
-    const tdayName = date.toLocaleDateString("default", { weekday: "long" });
-
-    document.getElementById("tday").innerText = tday;
-    document.getElementById("tmonth").innerText = tmonth;
-    document.getElementById("tyear").innerText = tyear;
-    document.getElementById("tdayName").innerText = tdayName;
-  };
-
-  useEffect(() => {
-    updateDateDivValues(new Date());
-  }, []);
 
   const handleTravelDate = (date) => {
     setSelectedDate(date);
     setShowDate(false);
-    updateDateDivValues(date);
-    const tday = date.getDate();
-    const tmonth = date.toLocaleString("default", { month: "short" });
-    const tyear = date.getFullYear().toString().slice(-2);
-    const tdayName = date.toLocaleDateString("default", { weekday: "long" });
-
-    document.getElementById("tday").innerText = tday;
-    document.getElementById("tmonth").innerText = tmonth;
-    document.getElementById("tyear").innerText = tyear;
-    document.getElementById("tdayName").innerText = tdayName;
-
     handleSearchData(
       "day",
       date.toLocaleDateString("default", { weekday: "short" })
     );
-    handleSearchData("date", date);
+    handleSearchData("date", date.toLocaleDateString());
   };
 
   return (
@@ -128,23 +102,39 @@ const Buswidget = () => {
                 <p>Travel Date</p>
                 <MdKeyboardArrowDown size={20} color="#008cff" />
               </div>
-              <p>
-                <span id="tday"></span>
-                <span id="tmonth"></span>
-                <span id="tyear"></span>
-              </p>
-              <p id="tdayName"></p>
-              {showDate && (
-                <OutsideClickHandler onOutsideClick={() => setShowDate(false)}>
+              {selectedDate && (
+                <>
+                  <p>
+                    <span>{selectedDate.getDate()}</span>
+                    <span>
+                      {selectedDate.toLocaleString("default", {
+                        month: "short",
+                      })}
+                    </span>
+                    <span>
+                      {selectedDate.getFullYear().toString().slice(-2)}
+                    </span>
+                  </p>
+                  <p>
+                    {selectedDate.toLocaleDateString("default", {
+                      weekday: "long",
+                    })}
+                  </p>
+                </>
+              )}
+            </div>
+            {showDate && (
+              <OutsideClickHandler onOutsideClick={() => setShowDate(false)}>
+                <div className="datepicker-bus">
                   <DatePicker
                     selected={selectedDate}
                     onChange={handleTravelDate}
                     inline
                     minDate={new Date()}
                   />
-                </OutsideClickHandler>
-              )}
-            </div>
+                </div>
+              </OutsideClickHandler>
+            )}
           </div>
           <div className="bw-searchbtndiv">
             <Link to={`/buses?${createSearchParams(searchData)}`}>

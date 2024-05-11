@@ -58,14 +58,25 @@ const LoginPage = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    // Check for validation errors
     if (
       Object.values(errors).join("") ||
       Object.values(formData).some((val) => val === "")
     ) {
-      console.log(Object.values(errors).join(""));
+      toast.error("Please fill all the required fields.", {
+        position: "top-right",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
       return;
     }
-    console.log(formData);
+
+    // console.log(formData);
     await post("/bookingportals/login", {
       ...formData,
       appType: "bookingportals",
@@ -118,7 +129,7 @@ const LoginPage = () => {
   return (
     <>
       <form onSubmit={handleSubmit} className="mt-8">
-        <label>Email or Mobile Number</label>
+        <label>Email</label>
         <input
           placeholder="Enter your valid email"
           type="email"
