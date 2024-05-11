@@ -31,7 +31,7 @@ const HotelSearchPage = () => {
         rating ? `&filter={"rating":"${rating}"}` : ""
       }${roomType ? `&filter={"rooms.roomType":"${roomType}"}` : ""}${
         avgCostPerNight
-          ? `&filter={"avgCostPerNight":{ "$gte":"5000","$gte":"7000","$lte":"8000"}}`
+          ? `&filter={"avgCostPerNight":{ "$gte":${avgCostPerNight}}}`
           : ""
       }`
     );
